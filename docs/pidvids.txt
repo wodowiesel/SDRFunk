@@ -1,0 +1,68 @@
+	  PID & VIDs from USB devices (in hex & dec)
+	
+	  {"vendorId": 0x0bda, "productId": 0x2832,	"donglename": "all Generic RTL2832U - Hama nano)"}
+	  {"vendorId": 0x0bda, "productId": 0x2838, "donglename": "ezcap USB 2.0 E4000 DVB-T/DAB/FM dongle"}
+	  {"vendorId": 0x0413, "productId": 0x6680, "donglename": "DigitalNow Quad DVB-T PCI-E card"},
+	  {"vendorId": 0x0413, "productId": 0x6f0f, "donglename": "Leadtek WinFast DTV Dongle mini D"},
+	  {"vendorId": 0x0458, "productId": 0x707f, "donglename": "Genius TVGo DVB-T03 USB dongle (Ver. B)"},
+	  {"vendorId": 0x0ccd, "productId": 0x00a9, "donglename": "Terratec Cinergy T Stick Black (rev 1)"},
+	  {"vendorId": 0x0ccd, "productId": 0x00b3, "donglename": "Terratec NOXON DAB/DAB+ USB dongle (rev 1)"},
+	  {"vendorId": 0x0ccd, "productId": 0x00b4, "donglename": "Terratec Deutschlandradio DAB Stick"},
+	  {"vendorId": 0x0ccd, "productId": 0x00b5, "donglename": "Terratec NOXON DAB Stick - Radio Energy"},
+	  {"vendorId": 0x0ccd, "productId": 0x00b7, "donglename": "Terratec Media Broadcast DAB Stick"},
+	  {"vendorId": 0x0ccd, "productId": 0x00b8, "donglename": "Terratec BR DAB Stick"},
+	  {"vendorId": 0x0ccd, "productId": 0x00b9, "donglename": "Terratec WDR DAB Stick"},
+	  {"vendorId": 0x0ccd, "productId": 0x00c0, "donglename": "Terratec MuellerVerlag DAB Stick"},
+	  {"vendorId": 0x0ccd, "productId": 0x00c6, "donglename": "Terratec Fraunhofer DAB Stick"},
+	  {"vendorId": 0x0ccd, "productId": 0x00d3, "donglename": "Terratec Cinergy T Stick RC (Rev.3)"},
+	  {"vendorId": 0x0ccd, "productId": 0x00d7, "donglename": "Terratec T Stick PLUS"},
+	  {"vendorId": 0x0ccd, "productId": 0x00e0, "donglename": "Terratec NOXON DAB/DAB+ USB dongle (rev 2)"},
+	  {"vendorId": 0x1554, "productId": 0x5020, "donglename": "PixelView PV-DT235U(RN)"},
+	  {"vendorId": 0x15f4, "productId": 0x0131, "donglename": "Astrometa DVB-T/DVB-T2"},
+	  {"vendorId": 0x15f4, "productId": 0x0133, "donglename": "HanfTek DAB+FM+DVB-T"},
+	  {"vendorId": 0x185b, "productId": 0x0620, "donglename": "Compro Videomate U620F"},
+	  {"vendorId": 0x185b, "productId": 0x0650, "donglename": "Compro Videomate U650F"},
+	  {"vendorId": 0x185b, "productId": 0x0680, "donglename": "Compro Videomate U680F"},
+	  {"vendorId": 0x1b80, "productId": 0xd393, "donglename": "GIGABYTE GT-U7300"},
+	  {"vendorId": 0x1b80, "productId": 0xd394, "donglename": "DIKOM USB-DVBT HD"},
+	  {"vendorId": 0x1b80, "productId": 0xd395, "donglename": "Peak 102569AGPK"},
+	  {"vendorId": 0x1b80, "productId": 0xd397, "donglename": "KWorld KW-UB450-T USB DVB-T Pico TV"},
+	  {"vendorId": 0x1b80, "productId": 0xd398, "donglename": "Zaapa ZT-MINDVBZP"},
+	  {"vendorId": 0x1b80, "productId": 0xd39d, "donglename": "SVEON STV20 DVB-T USB & FM"},
+	  {"vendorId": 0x1b80, "productId": 0xd3a4, "donglename": "Twintech UT-40"},
+	  {"vendorId": 0x1b80, "productId": 0xd3a8, "donglename": "ASUS U3100MINI_PLUS_V2"},
+	  {"vendorId": 0x1b80, "productId": 0xd3af, "donglename": "SVEON STV27 DVB-T USB & FM"},
+	  {"vendorId": 0x1b80, "productId": 0xd3b0, "donglename": "SVEON STV21 DVB-T USB & FM"},
+	  {"vendorId": 0x1d19, "productId": 0x1101, "donglename": "Dexatek DK DVB-T Dongle (Logilink VG0002A)"},
+	  {"vendorId": 0x1d19, "productId": 0x1102, "donglename": "Dexatek DK DVB-T Dongle (MSI DigiVox mini II V3.0)"},
+	  {"vendorId": 0x1d19, "productId": 0x1103, "donglename": "Dexatek Technology Ltd. DK 5217 DVB-T Dongle"},
+	  {"vendorId": 0x1d19, "productId": 0x1104, "donglename": "MSI DigiVox Micro HD"},
+	  {"vendorId": 0x1f4d, "productId": 0xa803, "donglename": "Sweex DVB-T USB"},
+	  {"vendorId": 0x1f4d, "productId": 0xb803, "donglename": "GTek T803"},
+	  {"vendorId": 0x1f4d, "productId": 0xc803, "donglename": "Lifeview LV5TDeluxe"},
+	  {"vendorId": 0x1f4d, "productId": 0xd286, "donglename": "MyGica TD312"},
+	  {"vendorId": 0x1f4d, "productId": 0xd803, "donglename": "PROlectrix DV107669"}]
+	  
+	  THIS permissions are for chrome os, android, linux, mac, and other devices like phones and tablets only!
+	  
+	  Some of the permissions are maybe deprecated, depends on the browser version you use.
+	  
+	  "virtualKeyboard", 
+	  "fileSystemProvider", 
+	  "fileBrowserHandler", 
+	  "system.powerSource",
+	  "cookies", 
+	  "sessions", 	  
+	  "activeTab",	  
+	  "topSites",	  
+	  "sessions",
+	  "history",	  
+	  "management",	  
+	  "pageCapture",
+	  "webNavigation",
+	  "webRequest",
+	  "webRequestBlocking",
+	  "contentSettings",
+	  "bookmarks",
+	  "appNotifications"
+	  
