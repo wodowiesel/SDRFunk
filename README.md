@@ -1,6 +1,6 @@
 # README
 
-![alt text](https://raw.githubusercontent.com/silicator/SDRFunk/master/docs/favicon.png "Logo SDRFunk")
+![alt text](https://github.com/silicator/SDRFunk/blob/master/docs/favicon.png "Logo SDRFunk")
 
 ## SDRFunk HAM-Radio Receiver Extention 1.1.6_0a 
 
