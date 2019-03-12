@@ -12,7 +12,7 @@ based on Google Radio-Receiver 1.1.5_0
 
 Chrome Extension Scripts by Jacobo Tarrio from 30. Juni 2016
 
-[Radio-Receiver](https://chrome.google.com/webstore/detail/radio-receiver/miieomcelenidlleokajkghmifldohpo)
+Chrome Store [Radio-Receiver](https://chrome.google.com/webstore/detail/radio-receiver/miieomcelenidlleokajkghmifldohpo)
 
 [Git-Link](https://github.com/google/radioreceiver) user: jtarrio
 
@@ -26,11 +26,11 @@ Receive and listen to FM and AM radio broadcasts on your browser using an *RTL-S
 
 This application does FM and AM demodulation in the browser and can capture the radio signals as *.wav
 
-*This version was improved with adjustable styles, window-sizes and better permission controls
+* This version was improved with adjustable styles, window-sizes and better permission controls
 
-*Supports most compatible R820T & *T2* tuner chip now  (maybe some E4000!?) !! (incl. full PID & VID-list)
+* Supports most compatible R820T & *T2* tuner chip now  (maybe some E4000!?) !! 
 
-See [Compatibility-List](docs/pidvids.txt)
+See [Compatibility-List](docs/pidvids.txt) (incl. PID & VID)
 
 Features:
 * Scanner
