@@ -1,6 +1,6 @@
 vendorId (hex),VID (dec),productId (hex),PID (dec),donglename
 0x0bda,3034,0x2838,10296,All Generic RTL2832U OEM - Hama nano
-0x0bda,3034,0x2832,10290,NESDR SMART / ezcap USB 2.0 E4000 DVB-T/DAB/FM dongle
+0x0bda,3034,0x2832,10290,NooElec NESDR SMART / ezcap USB 2.0 E4000 DVB-T/DAB/FM dongle
 0x0413,1043,0x6680,26240,DigitalNow Quad DVB-T PCI-E card
 0x0413,1043,0x6f0f,28431,Leadtek WinFast DTV Dongle mini D
 0x0458,1112,0x707f,28799,Genius TVGo DVB-T03 USB dongle (Ver. B)

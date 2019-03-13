@@ -96,7 +96,7 @@ or any other antenna-configuration you like to use if you're an advanced amateur
 
 You can use an LNA for improving signal-strength or Bias-T (12V vertical or 18 V horizontal) setup for satellites @ 10-12 GHz.
 
-- I use the NESDR SMART dongle with a LNA (5V)
+- I use the NooElec NESDR SMART dongle with LNA (usb 5V)
 
 ___
 
