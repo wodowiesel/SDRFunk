@@ -1,0 +1,43 @@
+vendorId (hex),VID (dec),productId (hex),PID (dec),donglename
+0x0bda,3034,0x2838,10296,All Generic RTL2832U OEM - Hama nano
+0x0bda,3034,0x2832,10290,NESDR SMART / ezcap USB 2.0 E4000 DVB-T/DAB/FM dongle
+0x0413,1043,0x6680,26240,DigitalNow Quad DVB-T PCI-E card
+0x0413,1043,0x6f0f,28431,Leadtek WinFast DTV Dongle mini D
+0x0458,1112,0x707f,28799,Genius TVGo DVB-T03 USB dongle (Ver. B)
+0x0ccd,3277,0x00a9,169,Terratec Cinergy T Stick Black (rev 1)
+0x0ccd,3277,0x00b3,179,Terratec NOXON DAB/DAB+ USB dongle (rev 1
+0x0ccd,3277,0x00b4,180,Terratec Deutschlandradio DAB Stick
+0x0ccd,3277,0x00b5,181,Terratec NOXON DAB Stick - Radio Energy
+0x0ccd,3277,0x00b7,183,Terratec Media Broadcast DAB Stick
+0x0ccd,3277,0x00b8,184,Terratec BR DAB Stick
+0x0ccd,3277,0x00b9,185,Terratec WDR DAB Stick
+0x0ccd,3277,0x00c0,192,Terratec MuellerVerlag DAB Stick
+0x0ccd,3277,0x00c6,198,Terratec Fraunhofer DAB Stick
+0x0ccd,3277,0x00d3,211,Terratec Cinergy T Stick RC (Rev.3
+0x0ccd,3277,0x00d7,215,Terratec T Stick PLUS
+0x0ccd,3277,0x00e0,224,Terratec NOXON DAB/DAB+ USB dongle (rev 2)
+0x1554,5460,0x5020,20512,PixelView PV-DT235U(RN)
+0x1554,5460,0x0131,305,Astrometa DVB-T/DVB-T2
+0x1554,5460,0x0133,307,HanfTek DAB+FM+DVB-T
+0x185b,6235,0x0620,1568,"Compro Videomate U620F""},"
+0x185b,6235,0x0650,1616,Compro Videomate U650F
+0x185b,6235,0x0680,1664,Compro Videomate U680F
+0x1b80,7040,0xd393,54163,GIGABYTE GT-U7300
+0x1b80,7040,0xd394,54164,DIKOM USB-DVBT HD
+0x1b80,7040,0xd395,54165,Peak 102569AGPK
+0x1b80,7040,0xd397,54167,KWorld KW-UB450-T USB DVB-T Pico TV
+0x1b80,7040,0xd398,54168,Zaapa ZT-MINDVBZP
+0x1b80,7040,0xd39d,54173,SVEON STV20 DVB-T USB & FM
+0x1b80,7040,0xd3a4,54180,Twintech UT-40
+0x1b80,7040,0xd3a8,54184,ASUS U3100MINI_PLUS_V2
+0x1b80,7040,0xd3af,54191,SVEON STV27 DVB-T USB & FM
+0x1b80,7040,0xd3b0,54192,SVEON STV21 DVB-T USB & FM
+0x1d19,7449,0x1101,4353,Dexatek DK DVB-T Dongle (Logilink VG0002A)
+0x1d19,7449,0x1102,4354,Dexatek DK DVB-T Dongle (MSI DigiVox mini II V3.0)
+0x1d19,7449,0x1103,4355,Dexatek Technology Ltd. DK 5217 DVB-T Dongle
+0x1d19,7449,0x1104,4356,MSI DigiVox Micro HD
+0x1d19,7449,0xa803,43011,Sweex DVB-T USB
+0x1d19,7449,0xb803,47107,GTek T803
+0x1d19,7449,0xc803,51203,Lifeview LV5TDeluxe
+0x1d19,7449,0xd286,53894,MyGica TD312
+0x1d19,7449,0xd803,55299,PROlectrix DV107669

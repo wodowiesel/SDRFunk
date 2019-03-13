@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/silicator/SDRFunk/blob/master/docs/favicon.png "Logo SDRFunk")
 
-## SDRFunk HAM-Radio Receiver Extention 1.1.6_0a 
+## SDRFunk HAM-Radio Receiver Extension 1.1.6_0a 
 
 by silicator a.k.a. wiesel
 
@@ -24,20 +24,25 @@ ___
 
 Receive and listen to FM and AM radio broadcasts on your browser using an *RTL-SDR* (RTL2832U-chip) USB digital TV tuner.
 
-This application does FM and AM demodulation in the browser and can capture the radio signals as *.wav
+This application does FM and AM demodulation in the browser and can capture the radio signals as .wav
 
 * This version was improved with adjustable styles, window-sizes and better permission controls
 
-* Supports most compatible R820T & *T2* tuner chip now  (maybe some E4000!?) !! 
+* Supports most compatible R820T & *T2* tuner chips now (maybe some E4000!?) !! 
 
-See [Compatibility-List](docs/pidvids.txt) (incl. PID & VID)
+See PIDs & VIDs & Names in the [Compatibility-List](docs/compatibility-list.csv) (43 Devices incl. Generic now)
 
 Features:
+
 * Scanner
+
 * Recorder
-* Free-tuning mode for short wave, air band, marine band, etc.
-* Supported modes: Wideband FM, Narrowband FM, AM, SSB.
-* Some Frequencies requires an up/down-converter for shifting!
+
+* Free-tuning mode
+
+* Supported modes: W-FM, N-FM, AM, SSB
+
+* Some Frequencies require an up/down-converter for shifting!
 
 ___
 
@@ -53,27 +58,27 @@ ___
 
 ### Build & Install:
 
-For building just use the extention-packer the extention manager. 
+For building just use the extension-packer the extension manager. 
 
 a) Install it via Chrome Extension-Site (proved)
 
-b) Unzip the the Package first and copy it into the extention-folder of chrome
+b) Unzip the the Package first and copy it into the extension-folder of chrome
 
-Path: C:\Users\YOURUSERNAME\AppData\Local\Google\Chrome\User Data\Default\Extensions\hppnkhafjpaidmcihkjgkhbeoienblkf\1.1.6_0\
+Path: 'C:\Users\YOURUSERNAME\AppData\Local\Google\Chrome\User Data\Default\Extensions\hppnkhafjpaidmcihkjgkhbeoienblkf\1.1.6_0\'
 
-for previous original Version use ID: miieomcelenidlleokajkghmifldohpo\1.1.5_0\
+for previous original Version use ID: 'miieomcelenidlleokajkghmifldohpo\1.1.5_0\'
 
-c) Use the 1.1.6.pem and *.crx installer from the package
+c) Use the 1.1.6.pem and .crx installer from the package
 
 d) or via Extension-Manager (in Experimental-Mode) and load the ZIP-File and activate it
 
-(unsecure warning because its not directly from google store)
+(unsecure warning because its not directly from Google Store)
 
 Permissions: Can be managed in the Details
 
-You can use _locals if you want, just remove the x in foldername.
+You can use _locals if you want, just remove the x in folder name.
 
-Javascript must be activated in your browser!
+JavaScript must be activated in your browser!
 
 ___
 
@@ -83,13 +88,15 @@ run with admin/root permissions:
 
 Use '. dot' as decimal-comma separator! 
 
-Radio works with *.wav-file with 16-bit PCM @ 48000 [Hz] mono & stereo / 1-12.000 [MHz] range. (maybe 0.001 later)
+Radio works with .wav-file with 16-bit PCM @ 48000 [Hz] mono & stereo / 1-12.000 [MHz] range. (maybe 0.001 later)
 
-- Tip: You could use just a copper wire for 2 m/70 cm-band or other lambda(1/4)-antennas (17.5cm/6.9in for PMR)
+- Tip: You could use just a copper wire for 2 m/70 cm-band or other lambda(1/4)-antennas (17.5 cm/6.9" in for PMR)
 
 or any other antenna-configuration you like to use if you're an advanced amateur-radio-operator.
 
 You can use an LNA for improving signal-strength or Bias-T (12V vertical or 18 V horizontal) setup for satellites @ 10-12 GHz.
+
+- I use the NESDR SMART dongle with a LNA (5V)
 
 ___
 
@@ -115,10 +122,10 @@ ___
 
 - Usage at your **own risk** !!
 
-- Check laws of your country first! Some Frequencies are prohibited or need a Ham-License!
+- Check laws of your country first! Some Frequencies are prohibited/illegal or need a Ham-License!
 
 
-*Help / Testers /Push-Pull-Requests /IssueReports and Feedback always appreciated!*
+*Help / Testers / Push-Pull-Requests / Issue-Reports and Feedback always appreciated!*
 
 *Thank you and have fun!* 73 :)
 
@@ -142,4 +149,4 @@ ___
 
 This is not legal advice. 
 
-Would appreciate beeing named in the Source
+Would appreciate beeing named in the Source.

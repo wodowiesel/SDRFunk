@@ -1,4 +1,4 @@
-	  PID & VIDs from USB devices (in hex & dec)
+	  PID & VIDs from USB devices (in hex)
 	
 	  {"vendorId": 0x0bda, "productId": 0x2832,	"donglename": "all Generic RTL2832U - Hama nano)"}
 	  {"vendorId": 0x0bda, "productId": 0x2838, "donglename": "ezcap USB 2.0 E4000 DVB-T/DAB/FM dongle"}
