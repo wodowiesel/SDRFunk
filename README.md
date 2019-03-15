@@ -18,6 +18,8 @@ Chrome Store [Radio-Receiver](https://chrome.google.com/webstore/detail/radio-re
 
 under Apache License v2.0 
 
+Tested with Chrome v73.0.3683.75 official x64
+
 ___
 
 ### Infos:
@@ -76,7 +78,7 @@ d) or via Extension-Manager (in Experimental-Mode) and load the ZIP-File and act
 
 Permissions: Can be managed in the Details
 
-You can use _locals if you want, just remove the x in folder name.
+You can use _locals if you want, just remove the x in folder name (english/german).
 
 JavaScript must be activated in your browser!
 
