@@ -126,6 +126,7 @@ ___
 
 - Check laws of your country first! Some Frequencies are prohibited/illegal or need a Ham-License!
 
+- Listening / Spying & Decoding frequencies/channels encrypted without permission  is illigal!
 
 *Help / Testers / Push-Pull-Requests / Issue-Reports and Feedback always appreciated!*
 
