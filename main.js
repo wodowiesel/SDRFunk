@@ -14,7 +14,7 @@
 
 chrome.app.runtime.onLaunched.addListener(function() {
   chrome.app.window.create('interface.html', {
-    'id': 'SDR-FUNK',
+    'id': 'SDRFUNK',
     'bounds': {
       'width': 500,
       'height': 225
