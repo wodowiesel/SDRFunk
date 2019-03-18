@@ -91,11 +91,11 @@
 	}],
    "permissions": 
    [
-   "signedInDevices", "app.window", "hid", "storage", "unlimitedStorage", "usb", "serial", "geolocation", "system.network", "system.storage", "system.cpu", "system.memory", "alarms", "notifications", "diagnostics", "idle", "contextMenus", "browser", "tabs", "webview", "audio", "audioCapture", "videoCapture", "<all_urls>", "proxy", "mdns", "dns", "certificateProvider", "networking.config", "networking.onc", "vpnProvider", "gcm", "identity", "pointerLock", "tts", "ttsEngine", "mediaGalleries", "power", "clipboardRead", "clipboardWrite", {"fileSystem": ["write", "retainEntries", "directory"]}, "experimental", "debugger", "virtualKeyboard", "fileSystemProvider", "fileBrowserHandler", "system.powerSource", "wallpaper", "types", "runtime", "events", "commands", "accessibilityFeatures", "extension", "websites", "contentSettings", "privacy", "query"
+   ""app.window", "hid", "storage", "unlimitedStorage", "usb", "serial", "geolocation", "system.network", "system.storage", "system.cpu", "system.memory", "alarms", "notifications", "diagnostics", "idle", "contextMenus", "browser", "tabs", "webview", "audio", "audioCapture", "videoCapture", "<all_urls>", "proxy", "mdns", "certificateProvider", "networking.config", "networking.onc", "vpnProvider", "gcm", "identity", "pointerLock", "tts", "ttsEngine", "mediaGalleries", "power", "clipboardRead", "clipboardWrite", {"fileSystem": ["write", "retainEntries", "directory"]}, "experimental", "debugger", "virtualKeyboard", "fileSystemProvider", "fileBrowserHandler", "system.powerSource", "wallpaper", "commands", "accessibilityFeatures", "extension", "contentSettings", "privacy"
    ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.1.6",
-   "version_name": "1.1.6 beta"
+   "version": "1.1.6.0",
+   "version_name": "1.1.6.0 experimental"
 }
 
 
