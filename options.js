@@ -4,14 +4,18 @@
 
 var url;
 var incognito;
+var activeTabId;
 
-function settingChanged() {
-  
+chrome.tabs.onActivated.addListener(function(activeInfo) 
+{activeTabId = activeInfo.tabId;});
+
+function settingChanged() 
+{  
   var type = this.id;
   var setting = this.value;
   var pattern = /^file:/.test(url) ? url : url.replace(/\/[^\/]*?$/, '/*');
   console.log(type+' setting for '+pattern+': '+setting);
-  // HACK: [type] is not recognised by the docserver's sample crawler, so
+  // HACK: [type] is not recognised by the doc server's sample crawler, so
   // mention an explicit
   // type: chrome.contentSettings.cookies.set - See http://crbug.com/299634
   chrome.contentSettings[type].set({
@@ -22,30 +26,35 @@ function settingChanged() {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    chrome.tabs.query({active: true, currentWindow: true}, 
+	function(tabs) 
+	{
     var current = tabs[0];
     incognito = current.incognito;
     url = current.url;
     var types = [ 'background','images', 'javascript', 'location', 'plugins',
                   'notifications', 'microphone', 'camera',
                  'unsandboxedPlugins', 'automaticDownloads'];
-    types.forEach(function(type) {
-      // HACK: [type] is not recognised by the docserver's sample crawler, so
+    types.forEach(function(type) 
+	 {
+      // HACK: [type] is not recognised by the doc server's sample crawler, so
       // mention an explicit
       // type: chrome.contentSettings.cookies.get - See http://crbug.com/299634
       chrome.contentSettings[type] && chrome.contentSettings[type].get({
             'primaryUrl': url,
             'incognito': incognito
           },
-          function(details) {
+          function(details) 
+		  {
             document.getElementById(type).disabled = false;
             document.getElementById(type).value = details.setting;
           });
+     });
     });
-  });
 
   var selects = document.querySelectorAll('select');
-  for (var i = 0; i < selects.length; i++) {
+  for (var i = 0; i < selects.length; i++) 
+  {
     selects[i].addEventListener('change', settingChanged);
   }
 });

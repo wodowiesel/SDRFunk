@@ -2,9 +2,9 @@
 
 ![alt text](https://github.com/silicator/SDRFunk/blob/master/docs/favicon.png "Logo SDRFunk")
 
-## SDRFunk HAM-Radio Receiver Extension 1.1.6_0a 
+## SDRFunk HAM-Radio Receiver Extension 1.1.6_0 experimental
 
-by silicator a.k.a. wiesel
+by silicator a.k.a. Wiesel
 
 **Early Experimental!**
 
@@ -72,7 +72,7 @@ for previous original Version use ID: 'miieomcelenidlleokajkghmifldohpo\1.1.5_0\
 
 c) Use the 1.1.6.pem and .crx installer from the package
 
-d) or via Extension-Manager (in Experimental-Mode) and load the ZIP-File and activate it
+d) or via Extension-Manager (in Experimental-Mode) and load the unzipped folder and activate it
 
 (unsecure warning because its not directly from Google Store)
 

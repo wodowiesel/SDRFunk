@@ -91,7 +91,7 @@
 	}],
    "permissions": 
    [
-   ""app.window", "hid", "storage", "unlimitedStorage", "usb", "serial", "geolocation", "system.network", "system.storage", "system.cpu", "system.memory", "alarms", "notifications", "diagnostics", "idle", "contextMenus", "browser", "tabs", "webview", "audio", "audioCapture", "videoCapture", "<all_urls>", "proxy", "mdns", "certificateProvider", "networking.config", "networking.onc", "vpnProvider", "gcm", "identity", "pointerLock", "tts", "ttsEngine", "mediaGalleries", "power", "clipboardRead", "clipboardWrite", {"fileSystem": ["write", "retainEntries", "directory"]}, "experimental", "debugger", "virtualKeyboard", "fileSystemProvider", "fileBrowserHandler", "system.powerSource", "wallpaper", "commands", "accessibilityFeatures", "extension", "contentSettings", "privacy"
+   "app.window", "hid", "storage", "unlimitedStorage", "usb", "serial", "geolocation", "system.network", "system.storage", "system.cpu", "system.memory", "alarms", "notifications", "diagnostics", "idle", "contextMenus", "browser", "tabs", "webview", "audio", "audioCapture", "videoCapture", "<all_urls>", "proxy", "mdns", "certificateProvider", "networking.config", "networking.onc", "vpnProvider", "gcm", "identity", "pointerLock", "tts", "ttsEngine", "mediaGalleries", "power", "clipboardRead", "clipboardWrite", {"fileSystem": ["write", "retainEntries", "directory"]}, "experimental", "debugger", "virtualKeyboard", "fileSystemProvider", "fileBrowserHandler", "system.powerSource", "wallpaper", "commands", "accessibilityFeatures", "extension", "contentSettings", "privacy", "query"
    ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.1.6.0",
