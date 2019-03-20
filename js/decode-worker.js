@@ -17,12 +17,13 @@
  * demodulates them, extracts the audio signals, and sends them back.
  */
 
-importScripts('dsp.js');
+if('function' === typeof importScripts) {
+importScripts('dsp.js'); // chrome =< 70 works,  but since 71 error
 importScripts('demodulator-am.js');
 importScripts('demodulator-ssb.js');
 importScripts('demodulator-nbfm.js');
 importScripts('demodulator-wbfm.js');
-
+}
 var IN_RATE = 1024000;
 var OUT_RATE = 48000;
 

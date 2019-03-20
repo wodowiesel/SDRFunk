@@ -17,11 +17,11 @@
  * demodulates them, extracts the audio signals, and sends them back.
  */
 
-importScripts('dsp.js');
-importScripts('demodulator-am.js');
-importScripts('demodulator-ssb.js');
-importScripts('demodulator-nbfm.js');
-importScripts('demodulator-wbfm.js');
+importScripts('../js/dsp.js');
+importScripts('../js/demodulator-am.js');
+importScripts('../js/demodulator-ssb.js');
+importScripts('../js/demodulator-nbfm.js');
+importScripts('../js/demodulator-wbfm.js');
 
 var IN_RATE = 1024000;
 var OUT_RATE = 48000;
