@@ -65,7 +65,7 @@ var Frequencies = (function() {
   function parseReadableInput(frequency) {
     var mul = 1;
     frequency = frequency.toLowerCase().trim();
-    if (frequency.substr(-2) == "hz") {
+    if (frequency.substr(-2) == "Hz") {
       frequency = frequency.substr(0, frequency.length - 2).trim();
     }
     var suffix = frequency.substr(-1);

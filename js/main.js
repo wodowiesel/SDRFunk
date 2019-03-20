@@ -13,8 +13,8 @@
 // limitations under the License.
 
 chrome.app.runtime.onLaunched.addListener(function() {
-  chrome.app.window.create('interface.html', {
-    'id': 'SDR-FUNK',
+  chrome.app.window.create('../html/interface.html', {
+    'id': 'SDRFUNK',
     'bounds': {
       'width': 500,
       'height': 225

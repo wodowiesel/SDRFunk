@@ -114,7 +114,7 @@ function RTL2832U(conn, ppm, opt_gain) {
     }
     if (!tuner) {
       throwError('Sorry, your USB dongle has an unsupported tuner chip. ' +
-                 'Only the R820T+R820T2 chips are supported.');
+                 'Only the R820T/T2 chips are supported.');
       return;
     }
     var multiplier = -1 * Math.floor(IF_FREQ * (1<<22) / xtalFreq);

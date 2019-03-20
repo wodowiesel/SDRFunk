@@ -2,7 +2,7 @@
    "app": 
    {
       "background": {
-         "scripts": ["main.js", "options.js"], "persistent" : false
+         "scripts": ["js/main.js", "js/options.js"], "persistent" : false
       }
    }, 
    "icons": 
@@ -21,13 +21,13 @@
 		"152": "assets/icons/icon152.png"
    },
    "description": "Receive and listen to FM and AM radio or HAM broadcasts on your browser using an RTL2832U-based USB digital tuner dongle.",
-   "name": "SDRFUNK",
-   "short_name": "SDRFUNK",
+   "name": "SDRFunk",
+   "short_name": "SDRFunk",
    "author": "silicator a.k.a. Wiesel",
    "manifest_version": 2,
    "offline_enabled": true,
-   "options_ui": {"page": "options.html", "open_in_tab": false},
-   "options_page": "options.html",
+   "options_ui": {"page": "html/options.html", "open_in_tab": false},
+   "options_page": "html/options.html",
    "file_system_provider_capabilities": 
    {
    "configurable": true,
@@ -44,9 +44,9 @@
    {
    "usbDevices": 
    [
-	  {"productId": 2838, "vendorId": 3034, "productName": "NooElec NESDR SMART"},
-	  {"productId": 10290, "vendorId": 3034, "productName": "NooElec NESDR SMART"}, 
-	  {"productId": 10296, "vendorId": 3034, "productName": "Generic RTL2832U OEM - Hama nano"}, 
+	  {"productId": 2838, "vendorId": 3034},
+	  {"productId": 10290, "vendorId": 3034}, 
+	  {"productId": 10296, "vendorId": 3034}, 
 	  {"productId": 26240, "vendorId": 1043, "productName": "DigitalNow Quad DVB-T PCI-E card"},
 	  {"productId": 28431, "vendorId": 1043, "productName": "Leadtek WinFast DTV Dongle mini D"},
 	  {"productId": 28799, "vendorId": 1112, "productName": "Genius TVGo DVB-T03 USB dongle (Ver. B)"},

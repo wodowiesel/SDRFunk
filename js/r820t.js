@@ -22,7 +22,8 @@
 function R820T(com, xtalFreq, throwError) {
 
   /**
-   * Initial values for registers 0x05-0x1f.
+   * Initial values for registers 0x05-0x1f. dec: 
+   
    */
   var REGISTERS = [0x83, 0x32, 0x75, 0xc0, 0x40, 0xd6, 0x6c, 0xf5, 0x63, 0x75,
                    0x68, 0x6c, 0x83, 0x80, 0x00, 0x0f, 0x00, 0xc0, 0x30, 0x48,
@@ -203,7 +204,7 @@ function R820T(com, xtalFreq, throwError) {
     ], function() {
     setPll(56000000, function() {
     if (!hasPllLock) {
-      throwError("PLL not locked -- cannot tune to the selected frequency.");
+      throwError("PLL not locked - cannot tune to the selected frequency.");
       return;
     }
     writeEach([

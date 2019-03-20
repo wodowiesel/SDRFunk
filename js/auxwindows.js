@@ -26,7 +26,7 @@ var AuxWindows = (function() {
    * @param {string} mode The station's mode.
    */
   function savePreset(frequency, name, band) {
-    chrome.app.window.create('savedialog.html', {
+    chrome.app.window.create('../html/savedialog.html', {
         'bounds': {
           'width': 300,
           'height': 1
@@ -65,7 +65,7 @@ var AuxWindows = (function() {
    * @param {Object} settings The current settings.
    */
   function settings(settings) {
-    chrome.app.window.create('settings.html', {
+    chrome.app.window.create('../html/settings.html', {
         'bounds': {
           'width': 350,
           'height': 1
@@ -82,7 +82,7 @@ var AuxWindows = (function() {
    * @param {AppWindow} mainWindow The app's main window.
    */
   function estimatePpm(mainWindow) {
-    chrome.app.window.create('estimateppm.html', {
+    chrome.app.window.create('../html/estimateppm.html', {
         'bounds': {
           'width': 350,
           'height': 1
@@ -99,7 +99,7 @@ var AuxWindows = (function() {
    * @param {AppWindow} mainWindow The app's main window.
    */
   function managePresets(mainWindow) {
-    chrome.app.window.create('presetmanager.html', {
+    chrome.app.window.create('../html/presetmanager.html', {
         'bounds': {
           'width': 700,
           'height': 1
@@ -116,7 +116,7 @@ var AuxWindows = (function() {
    * @param {string} msg The error message to show.
    */
   function error(msg) {
-    chrome.app.window.create('error.html', {
+    chrome.app.window.create('../html/error.html', {
         'bounds': {
           'width': 500,
           'height': 1
@@ -133,7 +133,7 @@ var AuxWindows = (function() {
    * @param {string} anchor An optional anchor to jump to.
    */
   function help(anchor) {
-    chrome.app.window.create('help.html' + (anchor ? '#' + anchor : ''), {
+    chrome.app.window.create('../html/help.html' + (anchor ? '#' + anchor : ''), {
         'bounds': {
           'width': 700,
           'height': 600

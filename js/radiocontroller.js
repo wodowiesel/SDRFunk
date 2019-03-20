@@ -400,7 +400,7 @@ function RadioController() {
       state = new State(STATE.OFF);
       throwError('USB tuner device not found. The Radio Receiver ' +
                  'app needs an RTL2832U-based DVB-T dongle ' +
-                 '(with an R820T tuner chip) to work.');
+                 '(with an R820T/T2 tuner chip) to work.');
     } else {
       chrome.usb.findDevices(TUNERS[index],
           function(conns) {
