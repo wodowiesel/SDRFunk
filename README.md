@@ -8,7 +8,7 @@ by silicator a.k.a. Wiesel
 
 **Early Experimental!**
 
-based on Google Radio-Receiver 1.1.5_0
+based on Google Radio-Receiver 1.1.5_0 (for Chrome =< 70)
 
 Chrome Extension Scripts by Jacobo Tarrio from 30. Juni 2016
 
@@ -18,7 +18,7 @@ Chrome Store [Radio-Receiver](https://chrome.google.com/webstore/detail/radio-re
 
 under Apache License v2.0 
 
-Tested with Chrome v73.0.3683.75 official x64
+Tested with Chrome v73.0.3683.86 official x64-bit (Browserversion >= 71)
 
 ___
 
@@ -54,7 +54,7 @@ get this program via:
 
 `git clone https://github.com/silicator/SDRFunk`
 
-or download the ZIP-File from the Release-Site
+or download the ZIP-File from the Release-Site (all included)
 
 ___
 
@@ -64,19 +64,18 @@ For building just use the extension-packer the extension manager.
 
 a) Install it via Chrome Extension-Site (proved)
 
-b) Unzip the the Package first and copy it into the extension-folder of chrome
-
-Path: 'C:\Users\YOURUSERNAME\AppData\Local\Google\Chrome\User Data\Default\Extensions\hppnkhafjpaidmcihkjgkhbeoienblkf\1.1.6_0\'
-
 for previous original Version use ID: 'miieomcelenidlleokajkghmifldohpo\1.1.5_0\'
 
-c) Use the 1.1.6.pem and .crx installer from the package
+b) Use the 1.1.6_0.pem and .crx installer from the package
 
-d) or via Extension-Manager (in Experimental-Mode) and load the unzipped folder and activate it
+c) Unzip the extension and load it via Extension-Manager 'chrome://extensions' (in Experimental-Mode)
 
-(unsecure warning because its not directly from Google Store)
+Path: 'C:\Users\YOURUSERNAME\AppData\Local\Google\Chrome\User Data\Default\Extensions\APP-ID\1.1.6_0\'
 
-Permissions: Can be managed in the Details
+(unsecure warning because it's not directly from Google Store)
+
+
+Permissions: Can be managed in the App-Details or in manifest
 
 You can use _locals if you want, just remove the x in folder name (english/german).
 
@@ -86,11 +85,13 @@ ___
 
 ### Usage:
 
-run with admin/root permissions:
+Run with admin/root permissions:
+
+You can open the App via 'chrome://apps' and create a desktop shortlink via mouse right-click"
 
 Use '. dot' as decimal-comma separator! 
 
-Radio works with .wav-file with 16-bit PCM @ 48000 [Hz] mono & stereo / 1-12.000 [MHz] range. (maybe 0.001 later)
+Radio works with .wav-file with 16-bit PCM @ 48000 [Hz] mono & stereo / 1 kHz - 12.000 [MHz] range.
 
 - Tip: You could use just a copper wire for 2 m/70 cm-band or other lambda(1/4)-antennas (17.5 cm/6.9" in for PMR)
 
