@@ -30,7 +30,7 @@ This application does FM and AM demodulation in the browser and can capture the 
 
 * This version was improved with adjustable styles, window-sizes and better permission controls
 
-* Supports most compatible R820T & *T2* tuner chips now (maybe some E4000!?) !! 
+* Supports most compatible R820T & T2 tuner chips now (maybe some E4000!?) !! 
 
 See PIDs & VIDs & Names in the [Compatibility-List](docs/compatibility-list.csv) (43 Devices incl. Generic now)
 
