@@ -97,9 +97,11 @@ Radio works with .wav-file with 16-bit PCM @ 48000 [Hz] mono & stereo / 1 [kHz] 
 
 or any other antenna-configuration you like to use if you're an advanced amateur-radio-operator.
 
-You can use an LNA for improving signal-strength or Bias-T (12V vertical or 18 V horizontal) setup for satellites @ 10-12 [GHz].
+- You can use an LNA (USB 5V or external) for improving signal-strength 
 
-- I use the [NooElec NESDR SMART](https://www.nooelec.com/store/sdr/sdr-receivers/nesdr/nesdr-smart-sdr.html) with an LNA (USB 5V) 
+- Bias-T (12V vertical or 18 V horizontal on LNB as PLL-type) for satellites @ 10-12 [GHz].
+
+- I use the [NooElec NESDR SMART](https://www.nooelec.com/store/sdr/sdr-receivers/nesdr/nesdr-smart-sdr.html) with an LNA  
 
 ___
 
