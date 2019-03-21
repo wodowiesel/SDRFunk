@@ -30,7 +30,7 @@ This application does FM and AM demodulation in the browser and can capture the 
 
 * This version was improved with adjustable styles, window-sizes and better permission controls
 
-* Supports most compatible R820T & T2 tuner chips now (maybe some E4000!?) !! 
+* Supports most compatible R820T & T2 tuner chips now (maybe some E4000!?)
 
 See PIDs & VIDs & Names in the [Compatibility-List](docs/compatibility-list.csv) (43 Devices incl. Generic now)
 
@@ -91,15 +91,15 @@ You can open the App via 'chrome://apps' and create a desktop shortlink via mous
 
 Use '. dot' as decimal-comma separator! 
 
-Radio works with .wav-file with 16-bit PCM @ 48000 [Hz] mono & stereo / 1 kHz - 12.000 [MHz] range.
+Radio works with .wav-file with 16-bit PCM @ 48000 [Hz] mono & stereo / 1 [kHz] - 12.000 [MHz] range.
 
 - Tip: You could use just a copper wire for 2 m/70 cm-band or other lambda(1/4)-antennas (17.5 cm/6.9" in for PMR)
 
 or any other antenna-configuration you like to use if you're an advanced amateur-radio-operator.
 
-You can use an LNA for improving signal-strength or Bias-T (12V vertical or 18 V horizontal) setup for satellites @ 10-12 GHz.
+You can use an LNA for improving signal-strength or Bias-T (12V vertical or 18 V horizontal) setup for satellites @ 10-12 [GHz].
 
-- I use the NooElec NESDR SMART dongle with LNA (usb 5V)
+- I use the [NooElec NESDR SMART](https://www.nooelec.com/store/sdr/sdr-receivers/nesdr/nesdr-smart-sdr.html) with an LNA (USB 5V) 
 
 ___
 
