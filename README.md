@@ -38,7 +38,7 @@ Features:
 
 * Scanner
 
-* Recorder
+* Recorder (.wav)
 
 * Free-tuning mode
 
@@ -64,13 +64,13 @@ For building just use the extension-packer the extension manager.
 
 a) Install it via Chrome Extension-Site (proved)
 
-for previous original Version use ID: 'miieomcelenidlleokajkghmifldohpo\1.1.5_0\'
+for previous original Version use ID: `miieomcelenidlleokajkghmifldohpo\1.1.5_0\`
 
 b) Use the 1.1.6_0.pem and .crx installer from the package
 
 c) Unzip the extension and load it via Extension-Manager 'chrome://extensions' (in Experimental-Mode)
 
-Path: 'C:\Users\YOURUSERNAME\AppData\Local\Google\Chrome\User Data\Default\Extensions\APP-ID\1.1.6_0\'
+Path: `C:\Users\YOURUSERNAME\AppData\Local\Google\Chrome\User Data\Default\Extensions\APP-ID\1.1.6_0\`
 
 (unsecure warning because it's not directly from Google Store)
 
