@@ -18,8 +18,51 @@
  */
 function RadioController() {
 
-  var TUNERS = [{'vendorId': 0x0bda, 'productId': 0x2832}, 
-                {'vendorId': 0x0bda, 'productId': 0x2838}];
+  var TUNERS = [{'productId': 0x2838, 'vendorId': 0x0bda},        
+	  {'productId': 10296, 'vendorId': 3034},
+	  {'productId': 10290, 'vendorId': 3034}, 
+	  {'productId': 26240, 'vendorId': 1043},
+	  {'productId': 28431, 'vendorId': 1043},
+	  {'productId': 28799, 'vendorId': 1112},
+	  {'productId': 169, 'vendorId': 3277},
+	  {'productId': 179, 'vendorId': 3277},
+	  {'productId': 180, 'vendorId': 3277},
+	  {'productId': 181, 'vendorId': 3277},
+	  {'productId': 183, 'vendorId': 3277},
+	  {'productId': 184, 'vendorId': 3277},
+	  {'productId': 185, 'vendorId': 3277},
+	  {'productId': 192, 'vendorId': 3277},
+	  {'productId': 198, 'vendorId': 3277},
+	  {'productId': 211, 'vendorId': 3277},
+	  {'productId': 215, 'vendorId': 3277},
+	  {'productId': 224, 'vendorId': 3277},
+	  {'productId': 20512, 'vendorId': 5460},
+	  {'productId': 305, 'vendorId': 5460},
+	  {'productId': 307, 'vendorId': 5460},
+	  {'productId': 1568, 'vendorId': 6235},
+	  {'productId': 1616, 'vendorId': 6235},
+	  {'productId': 1664, 'vendorId': 6235},
+	  {'productId': 54163, 'vendorId': 7040},
+	  {'productId': 54164, 'vendorId': 7040},
+	  {'productId': 54165, 'vendorId': 7040},
+	  {'productId': 54167, 'vendorId': 7040},
+	  {'productId': 54168, 'vendorId': 7040},
+	  {'productId': 54173, 'vendorId': 7040},
+	  {'productId': 54180, 'vendorId': 7040},
+	  {'productId': 54184, 'vendorId': 7040},
+	  {'productId': 54191, 'vendorId': 7040},
+	  {'productId': 54192, 'vendorId': 7040},
+	  {'productId': 4353, 'vendorId': 7449},
+	  {'productId': 4354, 'vendorId': 7449},
+	  {'productId': 4355, 'vendorId': 7449},
+	  {'productId': 4356, 'vendorId': 7449},
+	  {'productId': 43011, 'vendorId': 8013},
+	  {'productId': 47107, 'vendorId': 8013},
+	  {'productId': 51203, 'vendorId': 8013},
+	  {'productId': 53894, 'vendorId': 8013},
+	  {'productId': 55299, 'vendorId': 8013}
+	];
+				
   var SAMPLE_RATE = 1024000; // Must be a multiple of 512 * BUFS_PER_SEC
   var BUFS_PER_SEC = 5;
   var SAMPLES_PER_BUF = Math.floor(SAMPLE_RATE / BUFS_PER_SEC);
@@ -408,8 +451,9 @@ function RadioController() {
               doFindDevices(index + 1);
             } else {
               connection = conns[0];
+			  chrome.usb.requestAccess(TUNERS)
               processState();
-            }
+             } 
           });
     }
   }
