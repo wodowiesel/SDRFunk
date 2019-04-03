@@ -7,25 +7,27 @@
    }, 
    "icons": 
    {
-		"128": "assets/icons/icon128.png",
-		"48": "assets/icons/icon48.png",
 		"16": "assets/icons/icon16.png",
 		"36": "assets/icons/icon36.png",
+		"48": "assets/icons/icon48.png",
 		"57": "assets/icons/icon57.png",
 		"72": "assets/icons/icon72.png",
 		"78": "assets/icons/icon78.png",
 		"96": "assets/icons/icon96.png",
 		"114": "assets/icons/icon114.png",
 		"120": "assets/icons/icon120.png",
+		"128": "assets/icons/icon128.png",
 		"144": "assets/icons/icon144.png",
 		"152": "assets/icons/icon152.png"
    },
-   "description": "Receive and listen to FM and AM radio or HAM broadcasts on your browser using an RTL2832U-based USB digital tuner dongle.",
-   "name": "SDRFunk",
+   "description": "Receive and listen to FM/AM radio or HAM broadcasts on your browser using an RTL2832U-based USB digital tuner dongle.",
+   "name": "SDRFunk Radio Receiver",
    "short_name": "SDRFunk",
    "author": "silicator a.k.a. Wiesel",
    "manifest_version": 2,
+   "minimum_chrome_version": "37",
    "offline_enabled": true,
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgczDLdUCe27qScPuKInlDEKlh0OOxf4cYKgbj6vdtNRVbZoMWh8PGJBoN8Fd52cEsM+DnfMXo4dUjWRCcR6fsmtEZ7gLaeIH0qpdwgonxEHwfYMx7wJZvoumNI/FJUNXmJRDgZQ/BxTfIYQpupI1c9mGykVhqtfDwPDD90mT7opwmVOGaxuBvewa+IF10FYYOh9mRX8ASViJ3suGKsftZF0FjZplr2prE2x9JCc9MkA/ZbnyO/F4ora16N+jyWJqoRlYvkh2z3jxU1yAT42eG8JxrCiv/lKfLLodCmUZNOSEM907UnDv872vHYb5YpRMdDb9SvWXL/bFi8T6GvNKBQIDAQAB",
    "options_ui": {"page": "html/options.html", "open_in_tab": false},
    "options_page": "html/options.html",
    "file_system_provider_capabilities": 
@@ -40,7 +42,7 @@
     "tcp": {"connect": "*"},
     "udp": {"send": "*"}
    },
-   "optional_permissions": ["cookies", "downloads", "sessions", "activeTab", "topSites", "sessions", "history", "management", "pageCapture", "webNavigation", "webRequest", "webRequestBlocking",  "bookmarks", "desktopCapture", "input", "fontSettings", "windows", "declarativeContent", "browsingData", 
+   "optional_permissions": ["cookies", "downloads", "sessions", "topSites", "sessions", "history", "management", "pageCapture", "webNavigation", "webRequest", "webRequestBlocking", "bookmarks", "desktopCapture", "input", "fontSettings", "windows", "declarativeContent", "browsingData", 
    {
    "usbDevices": 
    [
@@ -91,11 +93,11 @@
 	}],
    "permissions": 
    [
-   "app.window", "hid", "storage", "unlimitedStorage", "usb", "serial", "geolocation", "system.network", "system.storage", "system.cpu", "system.memory", "alarms", "notifications", "diagnostics", "idle", "contextMenus", "browser", "tabs", "webview", "audio", "audioCapture", "videoCapture", "<all_urls>", "proxy", "mdns", "certificateProvider", "networking.config", "networking.onc", "vpnProvider", "gcm", "identity", "pointerLock", "tts", "ttsEngine", "mediaGalleries", "power", "clipboardRead", "clipboardWrite", {"fileSystem": ["write", "retainEntries", "directory"]}, "experimental", "debugger", "virtualKeyboard", "fileSystemProvider", "fileBrowserHandler", "system.powerSource", "wallpaper", "commands", "accessibilityFeatures", "extension", "contentSettings", "privacy", "query"
+   "app.window", "activeTab", "tabs", "hid", "storage", "unlimitedStorage", "usb", "serial", "geolocation", "system.network", "system.storage", "system.cpu", "system.memory", "alarms", "notifications", "diagnostics", "idle", "contextMenus", "browser",  "webview", "audio", "audioCapture", "videoCapture", "<all_urls>", "proxy", "mdns", "certificateProvider", "networking.config", "networking.onc", "vpnProvider", "gcm", "identity", "pointerLock", "tts", "ttsEngine", "mediaGalleries", "power", "clipboardRead", "clipboardWrite", {"fileSystem": ["write", "retainEntries", "directory"]}, "experimental", "debugger", "virtualKeyboard", "fileSystemProvider", "fileBrowserHandler", "system.powerSource", "wallpaper", "commands", "accessibilityFeatures", "extension", "contentSettings", "privacy", "query"
    ],
    "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.1.6.0",
-   "version_name": "1.1.6.0 experimental"
+   "version": "1.1.6",
+   "version_name": "1.1.6 experimental"
 }
 
 

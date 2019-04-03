@@ -6,8 +6,7 @@ var url;
 var incognito;
 var activeTabId;
 
-chrome.tabs.onActivated.addListener(function(activeInfo) 
-{activeTabId = activeInfo.tabId;});
+chrome.tabs.onActivated.addListener(function(activeInfo){activeTabId = activeInfo.tabId;});
 
 function settingChanged() 
 {  
