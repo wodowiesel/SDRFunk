@@ -64,13 +64,13 @@ For building just use the extension-packer the extension manager.
 
 a) Install it via Chrome Extension-Site (proved)
 
-for previous original Version use ID: `miieomcelenidlleokajkghmifldohpo\1.1.5_0\`
+for previous original Version use APP-ID: `miieomcelenidlleokajkghmifldohpo\`
 
 b) Use the extention_1.1.6_0.crx (.pem for key) installer from the package
 
 c) Unzip the extension and load it via Extension-Manager 'chrome://extensions' (in Experimental-Mode)
 
-Path: `C:\Users\YOURUSERNAME\AppData\Local\Google\Chrome\User Data\Default\Extensions\APPID\1.1.6_0\`
+Path: `C:\Users\YOURUSERNAME\AppData\Local\Google\Chrome\User Data\Default\Extensions\APP-ID\1.1.6_0\`
 
 (unsecure warning because it's not directly from Google Store)
 
@@ -129,7 +129,7 @@ ___
 
 - Check laws of your country first! Some Frequencies are prohibited/illegal or need a Ham-License!
 
-- Listening / Spying & Decoding frequencies/channels encrypted without permission  is illigal!
+- Listening / Spying & Decoding frequencies/channels encrypted without permission  is illegal!
 
 *Help / Testers / Push-Pull-Requests / Issue-Reports and Feedback always appreciated!*
 
