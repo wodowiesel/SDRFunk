@@ -20,7 +20,7 @@
 		"144": "assets/icons/icon144.png",
 		"152": "assets/icons/icon152.png"
    },
-   "description": "Receive and listen to FM/AM radio or HAM broadcasts on your browser using an RTL2832U-based USB digital tuner dongle.",
+   "description": "Receive and listen to FM/AM/SSB HAM radio broadcasts on your browser using an RTL2832U-based USB digital tuner dongle.",
    "name": "SDRFunk Radio Receiver",
    "short_name": "SDRFunk",
    "author": "silicator a.k.a. Wiesel",
