@@ -1,7 +1,7 @@
 {
-        "search_string": 
+        "search_string":
 		{
-          "message": "SDR",
+          "message": "SDRFunk",
           "description": "The string we search for. Put %20 between words that go together."
         }
 }

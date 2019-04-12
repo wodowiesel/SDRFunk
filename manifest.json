@@ -1,11 +1,10 @@
+
 {
-   "app": 
+   "app":
    {
-      "background": {
-         "scripts": ["js/main.js", "js/options.js"], "persistent" : false
-      }
-   }, 
-   "icons": 
+    "background": {"scripts": ["js/main.js", "js/options.js"], "persistent" : false}
+   },
+   "icons":
    {
 		"16": "assets/icons/icon16.png",
 		"36": "assets/icons/icon36.png",
@@ -25,30 +24,24 @@
    "short_name": "SDRFunk",
    "author": "silicator a.k.a. Wiesel",
    "manifest_version": 2,
-   "minimum_chrome_version": "37",
+   "minimum_firefox_version": "66",
    "offline_enabled": true,
    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgczDLdUCe27qScPuKInlDEKlh0OOxf4cYKgbj6vdtNRVbZoMWh8PGJBoN8Fd52cEsM+DnfMXo4dUjWRCcR6fsmtEZ7gLaeIH0qpdwgonxEHwfYMx7wJZvoumNI/FJUNXmJRDgZQ/BxTfIYQpupI1c9mGykVhqtfDwPDD90mT7opwmVOGaxuBvewa+IF10FYYOh9mRX8ASViJ3suGKsftZF0FjZplr2prE2x9JCc9MkA/ZbnyO/F4ora16N+jyWJqoRlYvkh2z3jxU1yAT42eG8JxrCiv/lKfLLodCmUZNOSEM907UnDv872vHYb5YpRMdDb9SvWXL/bFi8T6GvNKBQIDAQAB",
-   "options_ui": {"page": "html/options.html", "open_in_tab": false},
+   "options_ui": {"page": "html/options.html", "open_in_tab": true},
    "options_page": "html/options.html",
-   "file_system_provider_capabilities": 
+   "file_system_provider_capabilities":
    {
    "configurable": true,
    "multiple_mounts": true,
    "source": "network"
    },
-   "bluetooth": {"uuids": ["1105", "1006"]},
-   "sockets": 
+   "optional_permissions": ["cookies", "sessions", "topSites", "history", "browsingData", "management", "pageCapture", "webNavigation", "webRequest", "webRequestBlocking", "bookmarks", "input", "fontSettings", "windows", "declarativeContent",
    {
-    "tcp": {"connect": "*"},
-    "udp": {"send": "*"}
-   },
-   "optional_permissions": ["cookies", "downloads", "sessions", "topSites", "sessions", "history", "management", "pageCapture", "webNavigation", "webRequest", "webRequestBlocking", "bookmarks", "desktopCapture", "input", "fontSettings", "windows", "declarativeContent", "browsingData", 
-   {
-   "usbDevices": 
+   "usbDevices":
    [
 	  {"productId": 10296, "vendorId": 3034},
 	  {"productId": 10290, "vendorId": 3034},
-	  {"productId": 10290, "vendorId": 3034}, 
+	  {"productId": 10290, "vendorId": 3034},
 	  {"productId": 26240, "vendorId": 1043},
 	  {"productId": 28431, "vendorId": 1043},
 	  {"productId": 28799, "vendorId": 1112},
@@ -89,15 +82,19 @@
 	  {"productId": 51203, "vendorId": 8013},
 	  {"productId": 53894, "vendorId": 8013},
 	  {"productId": 55299, "vendorId": 8013}
-	  ]
+	   ]
 	}],
-   "permissions": 
+   "permissions":
    [
-   "app.window", "activeTab", "tabs", "hid", "storage", "unlimitedStorage", "usb", "serial", "geolocation", "system.network", "system.storage", "system.cpu", "system.memory", "alarms", "notifications", "diagnostics", "idle", "contextMenus", "browser",  "webview", "audio", "audioCapture", "videoCapture", "<all_urls>", "proxy", "mdns", "certificateProvider", "networking.config", "networking.onc", "vpnProvider", "gcm", "identity", "pointerLock", "tts", "ttsEngine", "mediaGalleries", "power", "clipboardRead", "clipboardWrite", {"fileSystem": ["write", "retainEntries", "directory"]}, "experimental", "debugger", "virtualKeyboard", "fileSystemProvider", "fileBrowserHandler", "system.powerSource", "wallpaper", "commands", "accessibilityFeatures", "extension", "contentSettings", "privacy", "query"
+   "app.window", "activeTab", "tabs", "contextMenus", "browser", "webview", "hid",
+   "usb", "system.storage", "system.cpu", "system.memory", "system.powerSource",
+   "power", "diagnostics", "idle", "audio", "audioCapture", "<all_urls>",
+   "gcm", "pointerLock", "tts", "ttsEngine", "clipboardRead", "clipboardWrite",
+   "storage", "unlimitedStorage", {"fileSystem": ["write", "retainEntries", "directory"]},
+   "virtualKeyboard", "fileSystemProvider", "fileBrowserHandler", "commands",
+   "accessibilityFeatures", "extension", "contentSettings", "privacy", "query"
    ],
    "update_url": "https://clients2.google.com/service/update2/crx",
    "version": "1.1.6",
    "version_name": "1.1.6 experimental"
 }
-
-

@@ -16,10 +16,11 @@ Chrome Store [Radio-Receiver](https://chrome.google.com/webstore/detail/radio-re
 
 [Git-Link](https://github.com/google/radioreceiver) user: jtarrio
 
-under Apache License v2.0 
+under Apache License v2.0
 
-Tested with Chrome v73.0.3683.86 official x64-bit (Browserversion >= 71)
+Tested with Chrome v73.0.3683.86 official x64-bit (Browser-version >= 71)
 
+-> WIP: Addon Version for Mozilla Firefox >= 66.0.0
 ___
 
 ### Infos:
@@ -30,19 +31,22 @@ This application does FM, AM, SSB demodulation in the browser and can capture th
 
 * This version was improved with adjustable styles, window-sizes and better permission controls
 
-* Supports most compatible R820T & T2 tuner chips now (maybe some E4000!?)
+* Supports most compatible R820T & T2 tuner chips now (maybe E4000!?)
 
 See PIDs & VIDs & Names in the [Compatibility-List](docs/compatibility-list.csv) (43 Devices incl. Generic now)
 
 Features:
+* Localisation support for en_us & de_ger (WIP)
 
 * Scanner
 
-* Recorder (.wav)
+* Channel mode (WIP)
 
 * Free-tuning mode
 
-* Supported modes: W-FM, N-FM, AM, SSB
+* Recorder (.wav)
+
+* Supported modes: W-FM, N-FM, AM, LSB, SSB
 
 * Some Frequencies require an up/down-converter for shifting!
 
@@ -50,19 +54,19 @@ ___
 
 ### Preparations:
 
-get this program via: 
+get this program via:
 
 `git clone https://github.com/silicator/SDRFunk`
 
-or download the ZIP-File from the Release-Site (all included)
+or download the ZIP-File from the Release-Site (all inclusive)
 
 ___
 
 ### Build & Install:
 
-For building just use the extension-packer the extension manager. 
+For building just use the extension-packer the extension manager.
 
-a) Install it via Chrome Extension-Site (proved)
+a) Install it via Firefox Addon-Site in developer mode
 
 for previous original Version use APP-ID: `miieomcelenidlleokajkghmifldohpo\`
 
@@ -75,7 +79,7 @@ Path: `C:\Users\YOURUSERNAME\AppData\Local\Google\Chrome\User Data\Default\Exten
 (unsecure warning because it's not directly from Google Store)
 
 
-Permissions: Can be managed in the App-Details or in manifest
+Permissions: Can be managed in the App-Details/Options or in manifest
 
 You can use _locals if you want to, just remove the x in folder name (english/german).
 
@@ -87,9 +91,9 @@ ___
 
 Run with admin/root permissions:
 
-You can open the App via 'chrome://apps' and create a desktop shortlink via mouse right-click"
+You can open the App via 'chrome://apps' and create a desktop short-link via mouse right-click"
 
-Use '. dot' as decimal-comma separator! 
+Use '. dot' as decimal-comma separator!
 
 Radio works with .wav-file with 16-bit PCM @ 48000 [Hz] mono & stereo / 1 [kHz] - 12.000 [MHz] range.
 
@@ -97,7 +101,7 @@ Radio works with .wav-file with 16-bit PCM @ 48000 [Hz] mono & stereo / 1 [kHz] 
 
 or any other antenna-configuration you like to use if you're an advanced amateur-radio-operator.
 
-- You can use an LNA (USB 5V or external) for improving signal-strength 
+- You can use an LNA (USB 5V or external) for improving signal-strength
 
 - Bias-T (12V vertical or 18 V horizontal on LNB as PLL-type) for satellites @ 10-12 [GHz].
 
@@ -111,7 +115,7 @@ ___
 
 - Antenna should be grounded if possible
 
-- You should use tested Antennas! 
+- You should use tested Antennas!
 
 - You can try to smooth the signal out with a 1:X-balloon if using long HF antenna
 
@@ -129,7 +133,7 @@ ___
 
 - Check laws of your country first! Some Frequencies are prohibited/illegal or need a Ham-License!
 
-- Listening / Spying & Decoding frequencies/channels encrypted without permission  is illegal!
+- Listening, Spying & Decoding frequencies/channels that are encrypted without permission is illegal!
 
 *Help / Testers / Push-Pull-Requests / Issue-Reports and Feedback always appreciated!*
 
@@ -153,6 +157,6 @@ ___
 
 [License Guideline](LICENSE.md) under Open-Source APL v2.0
 
-This is not legal advice. 
+This is not legal advice.
 
 Would appreciate beeing named in the Source.
