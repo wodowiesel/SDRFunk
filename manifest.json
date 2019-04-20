@@ -2,7 +2,7 @@
 {
    "app":
    {
-    "background": {"scripts": ["js/main.js", "js/options.js"], "persistent" : false}
+    "background": {"scripts": ["js/main.js"], "page": "html/background.html"}
    },
    "icons":
    {
@@ -20,18 +20,8 @@
 		"144": "assets/icons/icon144.png",
 		"152": "assets/icons/icon152.png"
    },
-   "description": "Receive and listen to FM/AM/SSB HAM radio broadcasts on your browser using an RTL2832U-based USB digital tuner dongle.",
-   "name": "SDRFunk Radio Receiver",
-   "short_name": "SDRFunk",
-   "author": "silicator a.k.a. Wiesel",
-   "homepage_url": "https://github.com/silicator/SDRFunk/tree/firefox-version",
-   "manifest_version": 2,
-   "minimum_firefox_version": "66",
-   "offline_enabled": true,
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgczDLdUCe27qScPuKInlDEKlh0OOxf4cYKgbj6vdtNRVbZoMWh8PGJBoN8Fd52cEsM+DnfMXo4dUjWRCcR6fsmtEZ7gLaeIH0qpdwgonxEHwfYMx7wJZvoumNI/FJUNXmJRDgZQ/BxTfIYQpupI1c9mGykVhqtfDwPDD90mT7opwmVOGaxuBvewa+IF10FYYOh9mRX8ASViJ3suGKsftZF0FjZplr2prE2x9JCc9MkA/ZbnyO/F4ora16N+jyWJqoRlYvkh2z3jxU1yAT42eG8JxrCiv/lKfLLodCmUZNOSEM907UnDv872vHYb5YpRMdDb9SvWXL/bFi8T6GvNKBQIDAQAB",
-   "options_ui": {"page": "html/options.html", "open_in_tab": true},
-   "options_page": "html/options.html",
-   "web_accessible_resources": [
+   "web_accessible_resources":
+   [
      "assets/icons/icon16.png",
      "assets/icons/icon32.png",
      "assets/icons/icon36.png",
@@ -63,18 +53,48 @@
      "docs/favicon.png",
      "docs/favicon.svg"
     ],
-   "browser_action": {
-    "default_icon": "assets/icons/icon36.png",
-    "default_title": "SDRFunk",
-    "default_popup": "html/popup.html"
-   },
-   "file_system_provider_capabilities":
+   "manifest_version": 2,
+   "description": "Receive and listen to FM/AM/SSB HAM radio broadcasts on your browser using an RTL2832U-based USB digital tuner dongle.",
+   "name": "SDRFunk Radio Receiver",
+   "short_name": "SDRFunk",
+   "author": "silicator a.k.a. Wiesel",
+   "version": "1.1.6",
+   "homepage_url": "https://github.com/silicator/SDRFunk/tree/firefox-version",
+   "default_locale": "en-us",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgczDLdUCe27qScPuKInlDEKlh0OOxf4cYKgbj6vdtNRVbZoMWh8PGJBoN8Fd52cEsM+DnfMXo4dUjWRCcR6fsmtEZ7gLaeIH0qpdwgonxEHwfYMx7wJZvoumNI/FJUNXmJRDgZQ/BxTfIYQpupI1c9mGykVhqtfDwPDD90mT7opwmVOGaxuBvewa+IF10FYYOh9mRX8ASViJ3suGKsftZF0FjZplr2prE2x9JCc9MkA/ZbnyO/F4ora16N+jyWJqoRlYvkh2z3jxU1yAT42eG8JxrCiv/lKfLLodCmUZNOSEM907UnDv872vHYb5YpRMdDb9SvWXL/bFi8T6GvNKBQIDAQAB",
+   "options_ui": {"page": "html/options.html", "open_in_tab": true},
+   "devtools_page": "html/devtools.html",
+   "chrome_url_overrides" : {"newtab": "about:blank"},
+   "incognito": "spanning",
+   "content_scripts":
+   [
+    {
+    "matches": ["<all_urls>"],
+    "js": ["js/interface.js"]
+    }
+   ],
+  "browser_action":
    {
-   "configurable": true,
-   "multiple_mounts": true,
-   "source": "network"
+   "default_icon": "assets/icons/icon36.png",
+   "default_title": "SDRFunk",
+   "default_popup": "html/popup.html"
    },
-   "optional_permissions": ["cookies", "sessions", "topSites", "history", "browsingData", "management", "pageCapture", "webNavigation", "webRequest", "webRequestBlocking", "bookmarks", "input", "fontSettings", "windows", "declarativeContent",
+   "browser_specific_settings": {
+    "gecko": {
+      "id": "abx@gmx.de",
+      "strict_min_version": "66.0.0"
+    },
+    "applications": {
+     "gecko": {
+     "update_url": "https://github.com/silicator/SDRFunk/tree/firefox-version/js/updates.json"
+  },
+}
+  },
+   "optional_permissions":
+   [
+    "backgound", "cookies", "sessions", "topSites", "history", "webNavigation",
+    "webRequest", "webRequestBlocking","bookmarks", "idle", "geolocation",
+    "tabsHide", "notifications", "find", "browserSettings"
    {
    "usbDevices":
    [
@@ -121,18 +141,16 @@
 	  {"productId": 54192, "vendorId": 7040},
 	  {"productId": 55299, "vendorId": 8013}
 	 ]
-	}],
+	 }],
    "permissions":
    [
-   "app.window", "activeTab", "tabs", "contextMenus", "browser", "webview", "hid",
-   "usb", "system.storage", "system.cpu", "system.memory", "system.powerSource",
-   "power", "diagnostics", "idle", "audio", "audioCapture", "<all_urls>",
-   "gcm", "pointerLock", "tts", "ttsEngine", "clipboardRead", "clipboardWrite",
-   "storage", "unlimitedStorage", {"fileSystem": ["write", "retainEntries", "directory"]},
-   "virtualKeyboard", "fileSystemProvider", "fileBrowserHandler", "commands",
-   "accessibilityFeatures", "extension", "contentSettings", "privacy", "query"
-   ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "1.1.6",
-   "version_name": "1.1.6 experimental"
+   "activeTab", "tabs", "contextMenus", "management", "idle", "clipboardRead",
+   "clipboardWrite", "storage", "privacy", "unlimitedStorage", "browsingData",
+   "downloads", "downloads.open", "<all_urls>", "usb", "pkcs11", "theme",
+   "menus", "proxy", "pageCapture", "dns", "alarms", "contextualIdentities",
+   "identity",
+   "system.storage", "system.cpu", "system.memory", "system.powerSource", "power",
+   "virtualKeyboard", "accessibilityFeatures", "audio", "audioCapture",
+   "tts", "ttsEngine"
+   ]
 }
