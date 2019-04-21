@@ -1,9 +1,11 @@
-
 {
-   "app":
-   {
-    "background": {"scripts": ["js/main.js"], "page": "html/background.html"}
-   },
+
+   "background":
+    {
+      "scripts": ["js/main.js", "js/background.js"],
+      "page": "html/background.html"
+    },
+
    "icons":
    {
 		"16": "assets/icons/icon16.png",
@@ -20,6 +22,7 @@
 		"144": "assets/icons/icon144.png",
 		"152": "assets/icons/icon152.png"
    },
+
    "web_accessible_resources":
    [
      "assets/icons/icon16.png",
@@ -53,51 +56,72 @@
      "docs/favicon.png",
      "docs/favicon.svg"
     ],
+
    "manifest_version": 2,
    "description": "Receive and listen to FM/AM/SSB HAM radio broadcasts on your browser using an RTL2832U-based USB digital tuner dongle.",
    "name": "SDRFunk Radio Receiver",
    "short_name": "SDRFunk",
    "author": "silicator a.k.a. Wiesel",
    "version": "1.1.6",
-   "homepage_url": "https://github.com/silicator/SDRFunk/tree/firefox-version",
+   "homepage_url": "https://github.com/silicator/SDRFunk/tree/firefox-version/",
    "default_locale": "en-us",
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgczDLdUCe27qScPuKInlDEKlh0OOxf4cYKgbj6vdtNRVbZoMWh8PGJBoN8Fd52cEsM+DnfMXo4dUjWRCcR6fsmtEZ7gLaeIH0qpdwgonxEHwfYMx7wJZvoumNI/FJUNXmJRDgZQ/BxTfIYQpupI1c9mGykVhqtfDwPDD90mT7opwmVOGaxuBvewa+IF10FYYOh9mRX8ASViJ3suGKsftZF0FjZplr2prE2x9JCc9MkA/ZbnyO/F4ora16N+jyWJqoRlYvkh2z3jxU1yAT42eG8JxrCiv/lKfLLodCmUZNOSEM907UnDv872vHYb5YpRMdDb9SvWXL/bFi8T6GvNKBQIDAQAB",
-   "options_ui": {"page": "html/options.html", "open_in_tab": true},
+   "incognito": "spanning",
    "devtools_page": "html/devtools.html",
    "chrome_url_overrides" : {"newtab": "about:blank"},
-   "incognito": "spanning",
+   "options_ui":
+   {
+     "browser_style": true,
+     "open_in_tab": true,
+     "page": "html/options.html"
+   },
+
+   "browser_specific_settings":
+   {
+    "gecko":
+    {
+      "id": "extentionid@example.org",
+      "strict_min_version": "66.0.0"
+    }
+   },
+
+   "applications":
+   {
+     "gecko":
+     {
+       "id": "extentionid@example.org",
+       "update_url": "https://github.com/silicator/SDRFunk/tree/firefox-version/js/updates.json"
+    }
+   },
    "content_scripts":
    [
     {
     "matches": ["<all_urls>"],
-    "js": ["js/interface.js"]
+    "js": ["js/interface.js", "js/main.js"]
     }
    ],
-  "browser_action":
+
+   "browser_action":
    {
-   "default_icon": "assets/icons/icon36.png",
-   "default_title": "SDRFunk",
-   "default_popup": "html/popup.html"
+    "default_icon": "assets/icons/icon36.png",
+    "default_title": "SDRFunk",
+    "default_popup": "html/popup.html"
    },
-   "browser_specific_settings": {
-    "gecko": {
-      "id": "abx@gmx.de",
-      "strict_min_version": "66.0.0"
-    },
-    "applications": {
-     "gecko": {
-     "update_url": "https://github.com/silicator/SDRFunk/tree/firefox-version/js/updates.json"
-  },
-}
-  },
+
+   "sidebar_action":
+   {
+     "default_title": "SDRFunk Sidebar",
+     "default_panel": "html/interface.html",
+     "default_icon": "assets/icons/icon32.png"
+   },
+
    "optional_permissions":
    [
     "backgound", "cookies", "sessions", "topSites", "history", "webNavigation",
-    "webRequest", "webRequestBlocking","bookmarks", "idle", "geolocation",
-    "tabsHide", "notifications", "find", "browserSettings"
-   {
-   "usbDevices":
-   [
+    "webRequest", "webRequestBlocking", "bookmarks", "idle", "geolocation",
+    "tabsHide", "notifications", "find", "browserSettings",
+    {
+    "usbDevices":
+    [
 	  {"productId": 169, "vendorId": 3277},
 	  {"productId": 179, "vendorId": 3277},
 	  {"productId": 180, "vendorId": 3277},
@@ -140,17 +164,17 @@
 	  {"productId": 54191, "vendorId": 7040},
 	  {"productId": 54192, "vendorId": 7040},
 	  {"productId": 55299, "vendorId": 8013}
-	 ]
-	 }],
+	  ]
+	  }
+   ],
+
    "permissions":
    [
    "activeTab", "tabs", "contextMenus", "management", "idle", "clipboardRead",
    "clipboardWrite", "storage", "privacy", "unlimitedStorage", "browsingData",
-   "downloads", "downloads.open", "<all_urls>", "usb", "pkcs11", "theme",
+   "downloads", "downloads.open", "<all_urls>", "pkcs11", "theme", "identity",
    "menus", "proxy", "pageCapture", "dns", "alarms", "contextualIdentities",
-   "identity",
-   "system.storage", "system.cpu", "system.memory", "system.powerSource", "power",
-   "virtualKeyboard", "accessibilityFeatures", "audio", "audioCapture",
-   "tts", "ttsEngine"
+   "debugger", "nativeMessaging", "usb"
    ]
-}
+
+ }
