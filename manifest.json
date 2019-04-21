@@ -3,7 +3,7 @@
    "background":
     {
 	  "persistent": true,
-      "scripts": ["js/main.js", "js/background.js"],
+      "scripts": ["js/background.js"],
       "page": "html/background.html"
     },
 
@@ -64,8 +64,8 @@
    "short_name": "SDRFunk",
    "author": "silicator a.k.a. Wiesel",
    "version": "1.1.6",
-   "minimum_chrome_version": "49.0", 
-   "homepage_url": "https://github.com/silicator/SDRFunk/tree/firefox-version/",
+   "minimum_chrome_version": "62.0",
+   "homepage_url": "https://github.com/silicator/SDRFunk/",
    "default_locale": "en",
    "incognito": "spanning",
    "devtools_page": "html/devtools.html",
@@ -82,7 +82,7 @@
     "gecko":
     {
       "id": "extentionid@example.org",
-      "strict_min_version": "66.0"
+      "strict_min_version": "62.0"
     }
    },
 
