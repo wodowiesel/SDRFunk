@@ -6,6 +6,32 @@
       "scripts": ["js/background.js"],
       "page": "html/background.html"
     },
+    "developer":
+    {
+      "name": "silicator a.k.a. Wiesel",
+      "url": "https://github.com/silicator/SDRFunk/"
+    },
+
+   "protocol_handlers":
+    [
+      {
+        "protocol": "mailto",
+        "name": "SDRFunk Extension",
+        "uriTemplate": "abx@gmx.de/#!/%s"
+      }
+    ],
+
+   "commands":
+     {
+         "toggle-feature":
+         {
+           "description": "Toggle Radio on/off",
+           "suggested_key":
+           {
+             "default": "MediaPlayPause"
+           },
+         }
+     },
 
    "icons":
    {
