@@ -1,16 +1,15 @@
 <!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>
- <link href="options.css" rel="stylesheet" type="text/css"> 
-  <script src="../js/options.js"></script>
+ <meta http-equiv="Content-Type" content="text/html, charset=UTF-8">
+ <link href="options.css" rel="stylesheet" type="text/css">
+ <script src="../js/options.js"></script>
 </head>
-
 <div id="container">
-  <input type="checkbox" id="regularValue" />
+  <input type="checkbox" id="regularValue"/>
   Enable referrers
   <div id="incognito">
-    <input type="checkbox" id="useSeparateIncognitoSettings" />
+    <input type="checkbox" id="useSeparateIncognitoSettings"/>
     Use separate setting for incognito mode:
     <br>
     <input type="checkbox" id="incognitoValue" disabled="disabled"/>
@@ -23,78 +22,94 @@
 <br>
     <fieldset>
       <dl>
-	  <dt><label for="background">Run in Background: </label></dt>
-        <dd>
-		<select id="background" enabled="">
-          <option value="allow">Allow</option>
-          <option value="block">Block</option>
-        </select></dd>
-		
+	      <dt><label for="background">Run in Background: </label></dt>
+        <dd><select id="background" enabled="">
+        <option value="allow">Allow</option>
+        <option value="block">Block</option>
+        </select>
+        </dd>
+
+        <dt><label for="javascript">Javascript: </label></dt>
+        <dd><select id="javascript" enabled="">
+        <option value="allow">Allow</option>
+        <option value="block">Block</option>
+        </select>
+        </dd>
+
         <dt><label for="cookies">Cookies: </label></dt>
-        <dd>
-		<select id="cookies" enabled="">
-          <option value="allow">Allow</option>
-          <option value="session_only">Session only</option>
-          <option value="block">Block</option>
+        <dd><select id="cookies" enabled="">
+        <option value="allow">Allow</option>
+        <option value="session_only">Session only</option>
+        <option value="block">Block</option>
         </select></dd>
-		
         <dt><label for="images">Images: </label></dt>
         <dd><select id="images" enabled="">
-          <option value="allow">Allow</option>
-          <option value="block">Block</option>
+        <option value="allow">Allow</option>
+        <option value="block">Block</option>
         </select>
-        </dd><dt><label for="javascript">Javascript: </label></dt>
-        <dd><select id="javascript" disabled="">
-          <option value="allow">Allow</option>
-          <option value="block">Block</option>
-        </select></dd>
+
         <dt><label for="location">Location: </label></dt>
         <dd><select id="location" enabled="">
-          <option value="allow">Allow</option>
-          <option value="ask">Ask</option>
-          <option value="block">Block</option>
-        </select></dd>
+        <option value="allow">Allow</option>
+        <option value="ask">Ask</option>
+        <option value="block">Block</option>
+        </select>
+        </dd>
+
         <dt><label for="plugins">Plugins: </label></dt>
         <dd><select id="plugins" enabled="">
-          <option value="allow">Allow</option>
-          <option value="block">Block</option>
-        </select></dd>
+        <option value="allow">Allow</option>
+        <option value="block">Block</option>
+        </select>
+        </dd>
+
         <dt><label for="popups">Pop-ups: </label></dt>
         <dd><select id="popups" enabled="">
-          <option value="allow">Allow</option>
-          <option value="block">Block</option>
-        </select></dd>
+        <option value="allow">Allow</option>
+        <option value="block">Block</option>
+        </select>
+        </dd>
+
         <dt><label for="notifications">Notifications: </label></dt>
         <dd><select id="notifications" enabled="">
-          <option value="allow">Allow</option>
-          <option value="ask">Ask</option>
-          <option value="block">Block</option>
-        </select></dd>
+        <option value="allow">Allow</option>
+        <option value="ask">Ask</option>
+        <option value="block">Block</option>
+        </select>
+        </dd>
+
         <dt><label for="microphone">Microphone: </label></dt>
         <dd><select id="microphone" enabled="">
-          <option value="allow">Allow</option>
-          <option value="ask">Ask</option>
-          <option value="block">Block</option>
-        </select></dd>
+        <option value="allow">Allow</option>
+        <option value="ask">Ask</option>
+        <option value="block">Block</option>
+        </select>
+        </dd>
+
         <dt><label for="camera">Camera: </label></dt>
         <dd><select id="camera" enabled="">
-          <option value="allow">Allow</option>
-          <option value="ask">Ask</option>
-          <option value="block">Block</option>
-        </select></dd>
+        <option value="allow">Allow</option>
+        <option value="ask">Ask</option>
+        <option value="block">Block</option>
+        </select>
+        </dd>
+
         <dt><label for="unsandboxedPlugins">Unsandboxed plugin access: </label></dt>
         <dd><select id="unsandboxedPlugins" enabled="">
-          <option value="allow">Allow</option>
-          <option value="ask">Ask</option>
-          <option value="block">Block</option>
-        </select></dd>
+        <option value="allow">Allow</option>
+        <option value="ask">Ask</option>
+        <option value="block">Block</option>
+        </select>
+        </dd>
+
         <dt><label for="automaticDownloads">Automatic Downloads: </label></dt>
         <dd><select id="automaticDownloads" enabled="">
-          <option value="allow">Allow</option>
-          <option value="ask">Ask</option>
-          <option value="block">Block</option>
-        </select></dd>
+        <option value="allow">Allow</option>
+        <option value="ask">Ask</option>
+        <option value="block">Block</option>
+        </select>
+        </dd>
       </dl>
     </fieldset>
-
+  </br>
 </html>

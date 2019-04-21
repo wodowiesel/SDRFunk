@@ -18,6 +18,7 @@ limitations under the License.
 <head>
 <title>SDRFunk Radio Receiver</title>
 <link rel="stylesheet" href="interface.css">
+<meta http-equiv="Content-Type" content="text/html, charset=UTF-8">
 <script src="../js/wavsaver.js"></script>
 <script src="../js/audio.js"></script>
 <script src="../js/rtlcom.js"></script>
@@ -30,6 +31,9 @@ limitations under the License.
 <script src="../js/appconfig.js"></script>
 <script src="../js/decode-worker.js"></script>
 <script src="../js/interface.js"></script>
+<script src="../js/estimateppm.js"></script>
+<script src="../js/settings.js"></script>
+
 </head>
 
 <body style="height: 300px">
@@ -86,18 +90,18 @@ limitations under the License.
       <div id="squelchBox" class="squelchBox freeTuningBox">
         <div class="freeTuningLabel">Squelch:</div>
         <div id="squelchDisplay" class="squelchDisplay freeTuningDisplay">100</div>
-        <input type="text" id="squelchInput" class="squelchInput freeTuningInput invisible" autocomplete="off" tabindex="17"></input>
+        <input type="text" id="squelchInput" class="squelchInput freeTuningInput invisible" tabindex="17" autocomplete="off"></input>
       </div>
     </div>
   </div>
-  <button id="freqPlusButton" class="freqPlusButton" title="Increase frequency" tabindex="23"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" version="1.1"><path d="M9.5,6l-5,5l-2,-2l3,-3l-3,-3l2,-2z" /></svg><br/>Freq+</button>  
+  <button id="freqPlusButton" class="freqPlusButton" title="Increase frequency" tabindex="23"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" version="1.1"><path d="M9.5,6l-5,5l-2,-2l3,-3l-3,-3l2,-2z" /></svg><br/>Freq+</button>
   <button id="scanUpButton" class="scanUpButton" title="Scan increasing frequency" tabindex="25">Scan+<br/><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" version="1.1"><path d="M5.5,6l-4,4l-1,-1l3,-3l-3,-3l1,-1z M11.5,6l-5,5l-2,-2l3,-3l-3,-3l2,-2z" /></svg></button>
 </div>
 <div class="bottom">
   <button id="powerOnButton" class="powerButton" title="Start radio" tabindex="1"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" version="1.1"><path d="M4,0.8765a5.5,5.5,0,1,0,4,0v2.2512a3.5,3.5,0,1,1,-4,0z" style="fill: #555" /><rect x="5" y="0" width="2" height="8" rx="1" ry="1" /></svg><br/>Power On</button>
   <button id="powerOffButton" class="powerButton invisible" title="Stop radio" tabindex="1"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" version="1.1"><path d="M4,0.8765a5.5,5.5,0,1,0,4,0v2.2512a3.5,3.5,0,1,1,-4,0z" /><rect x="5" y="0" width="2" height="8" rx="1" ry="1" style="fill: #555" /></svg><br/>Power Off</button>
   <button id="recordButton" class="recordingButton" title="Record from the radio" tabindex="51"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" version="1.1"><circle cx="6" cy="6" r="5" style="fill: #b00" /></svg><br/>Record</button>
-  <button id="stopButton" class="recordingButton invisible" title="Stop recording" tabindex="51"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" version="1.1"><rect x="1" y="1" width="8" height="8" style="fill: #005" /></svg><br/>Stop</button>
+  <button id="stopButton" class="recordingButton invisible" title="Stop recording" tabindex="51"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewbox="0 0 12 12" version="1.1"><rect x="1" y="1" width="8" height="8" style="fill: #005" /></svg></br>Stop</button>
   <div class="presets">
     <select id="presetsBox" class="presetsBox" name="preset" title="Select preset station" tabindex="41">
     </select>

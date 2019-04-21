@@ -1,5 +1,3 @@
-<!doctype html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
 <!--
 Copyright 2013 Google Inc. All rights reserved.
 
@@ -15,9 +13,13 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us">
 <head>
 <title>Radio Receiver Settings</title>
+<meta http-equiv="Content-Type" content="text/html, charset=UTF-8">
 <script src="../js/auxwindows.js"></script>
+<script src="../js/settings.js"></script>
 <style>
 .ppm, .upconverterFreq {
   text-align: right;
@@ -32,7 +34,7 @@ limitations under the License.
 <option value="JP">Japan</option>
 <option value="IT">Italy</option>
 <option value="NA">US and Canada</option>
-<option value="AM">Rest of the Americas</option>
+<option value="AM">South Americas</option>
 <option value="WW">Rest of the World</option>
 </select>
 </p>
@@ -42,9 +44,9 @@ limitations under the License.
 <p><input id="useUpconverter" name="useUpconverter" type="checkbox" title="Enable upconverter"><label for="useUpconverter">Use upconverter for AM</label><span id="upconverterFreqInput"> / <label for="upconverterFreq">Frequency:</label> <input id="upconverterFreq" class="upconverterFreq" name="upconverterFreq" size="9"> Hz.</span></p>
 <p><input id="enableFreeTuning" name="enableFreeTuning" type="checkbox"><label for="enableFreeTuning">Enable Free Tuning mode.</label></p>
 <p>You may need to turn the radio off and on before those settings take effect.</p>
-<p><a  id="managePresetsLink" href="#">Manage your presets</a>.</p>
-<button id="ok" type="submit">Save</button> <button id="cancel">Cancel</button>
-<script src="../js/settings.js"></script>
+<p><a  id="managePresetsLink" href="#">Manage your presets</a></p>
+<button id="ok" type="submit">Save</button>
+<button id="cancel">Cancel</button>
+
 </body>
 </html>
-
