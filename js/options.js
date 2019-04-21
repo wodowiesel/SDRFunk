@@ -8,8 +8,8 @@ var activeTabId;
 
 chrome.tabs.onActivated.addListener(function(activeInfo){activeTabId = activeInfo.tabId;});
 
-function settingChanged() 
-{  
+function settingChanged()
+{
   var type = this.id;
   var setting = this.value;
   var pattern = /^file:/.test(url) ? url : url.replace(/\/[^\/]*?$/, '/*');
@@ -25,16 +25,16 @@ function settingChanged()
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    chrome.tabs.query({active: true, currentWindow: true}, 
-	function(tabs) 
+    chrome.tabs.query({active: true, currentWindow: true},
+	function(tabs)
 	{
     var current = tabs[0];
     incognito = current.incognito;
     url = current.url;
     var types = [ 'background','images', 'javascript', 'location', 'plugins',
                   'notifications', 'microphone', 'camera',
-                 'unsandboxedPlugins', 'automaticDownloads'];
-    types.forEach(function(type) 
+                  'unsandboxedPlugins', 'automaticDownloads'];
+    types.forEach(function(type)
 	 {
       // HACK: [type] is not recognised by the doc server's sample crawler, so
       // mention an explicit
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
             'primaryUrl': url,
             'incognito': incognito
           },
-          function(details) 
+          function(details)
 		  {
             document.getElementById(type).disabled = false;
             document.getElementById(type).value = details.setting;
@@ -52,9 +52,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
   var selects = document.querySelectorAll('select');
-  for (var i = 0; i < selects.length; i++) 
+  for (var i = 0; i < selects.length; i++)
   {
     selects[i].addEventListener('change', settingChanged);
   }
 });
-
