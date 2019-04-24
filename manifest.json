@@ -5,7 +5,6 @@
       "background":
       {
          "scripts": ["js/main.js", "js/options.js"],
-         "page": "html/background.html",
          "persistent" : true
       }
    },
@@ -21,7 +20,7 @@
    "version": "1.1.6",
    "version_name": "1.1.6 experimental",
    "offline_enabled": true,
-   "default_locale": "en",
+
    "incognito": "spanning",
    "devtools_page": "html/devtools.html",
    "chrome_url_overrides" : {"newtab": "about:blank"},
@@ -105,7 +104,7 @@
    {
      "default_icon":
      {
-       "32": "assets/icons/icon32.png",
+       "32": "assets/icons/icon32.png"
      },
      "default_title": "SDRFunk",
      "default_popup": "html/popup.html"
@@ -125,9 +124,8 @@
        "description": "Toggle Radio on/off",
        "suggested_key":
        {
-         "default": "MediaPlayPause",
-         "linux": "F12"
-       },
+         "default": "MediaPlayPause"
+       }
      }
    },
 
@@ -169,20 +167,20 @@
    	  {"productId": 1568, "vendorId": 6235},
    	  {"productId": 1616, "vendorId": 6235},
    	  {"productId": 1664, "vendorId": 6235},
-         {"productId": 4353, "vendorId": 7449},
-         {"productId": 4354, "vendorId": 7449},
-         {"productId": 4355, "vendorId": 7449},
-         {"productId": 4356, "vendorId": 7449},
-         {"productId": 10296, "vendorId": 3034},
-         {"productId": 10290, "vendorId": 3034},
-         {"productId": 20512, "vendorId": 5460},
-         {"productId": 26240, "vendorId": 1043},
-         {"productId": 28431, "vendorId": 1043},
-         {"productId": 28799, "vendorId": 1112},
-         {"productId": 43011, "vendorId": 8013},
-         {"productId": 47107, "vendorId": 8013},
-         {"productId": 51203, "vendorId": 8013},
-         {"productId": 53894, "vendorId": 8013},
+      {"productId": 4353, "vendorId": 7449},
+      {"productId": 4354, "vendorId": 7449},
+      {"productId": 4355, "vendorId": 7449},
+      {"productId": 4356, "vendorId": 7449},
+      {"productId": 10296, "vendorId": 3034},
+      {"productId": 10290, "vendorId": 3034},
+      {"productId": 20512, "vendorId": 5460},
+      {"productId": 26240, "vendorId": 1043},
+      {"productId": 28431, "vendorId": 1043},
+      {"productId": 28799, "vendorId": 1112},
+      {"productId": 43011, "vendorId": 8013},
+      {"productId": 47107, "vendorId": 8013},
+      {"productId": 51203, "vendorId": 8013},
+      {"productId": 53894, "vendorId": 8013},
    	  {"productId": 54163, "vendorId": 7040},
    	  {"productId": 54164, "vendorId": 7040},
    	  {"productId": 54165, "vendorId": 7040},
@@ -210,6 +208,6 @@
    "experimental", "debugger", "virtualKeyboard", "fileSystemProvider",
    "fileBrowserHandler", "system.powerSource", "wallpaper", "commands",
    "accessibilityFeatures", "extension", "contentSettings", "privacy", "query"
-   ],
+   ]
 
 }
