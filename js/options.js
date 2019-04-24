@@ -14,9 +14,9 @@ function settingChanged()
   var setting = this.value;
   var pattern = /^file:/.test(url) ? url : url.replace(/\/[^\/]*?$/, '/*');
   console.log(type+' setting for '+pattern+': '+setting);
-  // HACK: [type] is not recognised by the doc server's sample crawler, so
-  // mention an explicit
-  // type: chrome.contentSettings.cookies.set - See http://crbug.com/299634
+  // HACK: [type] is not recognised by the doc server's sample crawler,
+  // mention an explicit so type: 
+  // chrome.contentSettings.cookies.set - See http://crbug.com/299634
   chrome.contentSettings[type].set({
         'primaryPattern': pattern,
         'setting': setting,
@@ -36,9 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   'unsandboxedPlugins', 'automaticDownloads'];
     types.forEach(function(type)
 	 {
-      // HACK: [type] is not recognised by the doc server's sample crawler, so
-      // mention an explicit
-      // type: chrome.contentSettings.cookies.get - See http://crbug.com/299634
+      // chrome.contentSettings.cookies.get - See http://crbug.com/299634
       chrome.contentSettings[type] && chrome.contentSettings[type].get({
             'primaryUrl': url,
             'incognito': incognito

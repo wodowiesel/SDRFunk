@@ -17,9 +17,9 @@ chrome.app.runtime.onLaunched.addListener(function() {
     'id': 'SDRFUNK',
     'bounds': {
       'width': 500,
-      'height': 230
+      'height': 225
     },
-    'resizable': true,
+    'resizable': false,
     'frame': 'none'
   });
 });
