@@ -104,7 +104,7 @@ or any other antenna-configuration you like to use if you're an advanced amateur
  
 - You can use for HF/MF/LF/VLF/ULF also an [Upconverter](https://www.amazon.de/Ham-Plus-zusammengebaut-benutzerdefiniertem-Frequenzbereich/dp/B076CYK8XZ/ref=pd_sbs_23_4/261-1084655-6713527?_encoding=UTF8&pd_rd_i=B076CYK8XZ&pd_rd_r=391428bd-af05-4e16-9e6d-e34dacb8f75b&pd_rd_w=IetOU&pd_rd_wg=UDmaE&pf_rd_p=74d946ea-18de-4443-bed6-d8837f922070&pf_rd_r=5E3NGBQXQGKN6E77P5BS&psc=1&refRID=5E3NGBQXQGKN6E77P5BS) 
 
-for Input-frequencies between 100 kHz - 50 MHz to Output 125.100 MHz - 175 MHz & intern TCXO works @ 125 MHz. 
+for Input-frequencies 100 kHz - 50 MHz to shift to Output 125.100 MHz - 175 MHz & intern TCXO works @125 MHz. 
 
 It's not specified for 10 kHz - 99.9 kHz but works ok. 
 ___
