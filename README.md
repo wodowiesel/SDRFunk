@@ -1,12 +1,12 @@
 # README
 
-![alt text](https://github.com/silicator/SDRFunk/blob/master/docs/favicon.png "Logo SDRFunk")
+![alt text](https://github.com/wodowiesel/SDRFunk/blob/master/docs/favicon.png "Logo SDRFunk")
 
 ## SDRFunk Radio Receiver Chrome Extension 1.1.6_0 experimental
 
 This is an enhanced version of the original extention
 
-by silicator a.k.a. Wiesel
+by wodowiesel
 
 **Experimental !**
 
@@ -32,7 +32,7 @@ This application does FM, AM, SSB demodulation in the browser and can capture th
 
 * This version was improved with adjustable styles, window-sizes and better permission controls
 
-* Supports most compatible R820T & T2 tuner IC chips now (maybe some E4000 !?) 
+* Supports most compatible R820T & T2 tuner IC chips now (maybe some E4000 !?)
 
 See PIDs & VIDs & Names in the [Compatibility-List](docs/compatibility-list.csv) (43 Devices incl. Generic now)
 
@@ -54,7 +54,7 @@ ___
 
 get this program via:
 
-`git clone https://github.com/silicator/SDRFunk`
+`git clone https://github.com/wodowiesel/SDRFunk`
 
 or download the ZIP-File from the Release-Site (all included)
 
@@ -101,12 +101,12 @@ or any other antenna-configuration you like to use if you're an advanced amateur
 - I use the [NooElec NESDR SMART](https://www.nooelec.com/store/sdr/sdr-receivers/nesdr/nesdr-smart-sdr.html) with an LNA
 
  0.5 ppm, ultra-low Phase-noice TCXO / @ 1kHz Offset: -138 dBc/Hz / @ 10kHz: -150 dBc/Hz / @ 100kHz: -152 dBc/Hz
- 
-- You can use for HF/MF/LF/VLF/ULF also an [Upconverter](https://www.amazon.de/Ham-Plus-zusammengebaut-benutzerdefiniertem-Frequenzbereich/dp/B076CYK8XZ/ref=pd_sbs_23_4/261-1084655-6713527?_encoding=UTF8&pd_rd_i=B076CYK8XZ&pd_rd_r=391428bd-af05-4e16-9e6d-e34dacb8f75b&pd_rd_w=IetOU&pd_rd_wg=UDmaE&pf_rd_p=74d946ea-18de-4443-bed6-d8837f922070&pf_rd_r=5E3NGBQXQGKN6E77P5BS&psc=1&refRID=5E3NGBQXQGKN6E77P5BS) 
 
-for Input-frequencies 100 kHz - 50 MHz to shift to Output 125.100 MHz - 175 MHz & intern TCXO works @125 MHz. 
+- You can use for HF/MF/LF/VLF/ULF also an [Upconverter](https://www.amazon.de/Ham-Plus-zusammengebaut-benutzerdefiniertem-Frequenzbereich/dp/B076CYK8XZ/ref=pd_sbs_23_4/261-1084655-6713527?_encoding=UTF8&pd_rd_i=B076CYK8XZ&pd_rd_r=391428bd-af05-4e16-9e6d-e34dacb8f75b&pd_rd_w=IetOU&pd_rd_wg=UDmaE&pf_rd_p=74d946ea-18de-4443-bed6-d8837f922070&pf_rd_r=5E3NGBQXQGKN6E77P5BS&psc=1&refRID=5E3NGBQXQGKN6E77P5BS)
 
-It's not specified for 10 kHz - 99.9 kHz but works ok. 
+for Input-frequencies 100 kHz - 50 MHz to shift to Output 125.100 MHz - 175 MHz & intern TCXO works @125 MHz.
+
+It's not specified for 10 kHz - 99.9 kHz but works ok.
 ___
 
 ### Warnings:
@@ -145,7 +145,7 @@ ___
 
 ### Links:
 
-[GitPage](https://silicator.github.io/SDRFunk/)
+[GitPage](https://wodowiesel.github.io/SDRFunk/)
 
 [Google Radio Receiver Forum Group](https://groups.google.com/forum/#!forum/radioreceiver)
 
