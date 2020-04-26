@@ -1,12 +1,12 @@
 # README
 
-![alt text](https://github.com/silicator/SDRFunk/blob/master/docs/favicon.png "Logo SDRFunk")
+![alt text](https://github.com/wodowiesel/SDRFunk/blob/master/docs/favicon.png "Logo SDRFunk")
 
 ## SDRFunk Radio Receiver Chrome Extension 1.1.6_0 experimental
 
 This is an enhanced version of the original extention
 
-by silicator a.k.a. Wiesel
+by wodowiesel
 
 **Experimental !**
 
@@ -54,7 +54,7 @@ ___
 
 get this program via:
 
-`git clone https://github.com/silicator/SDRFunk`
+`git clone https://github.com/wodowiesel/SDRFunk`
 
 or download the ZIP-File from the Release-Site (all included)
 
@@ -145,7 +145,7 @@ ___
 
 ### Links:
 
-[GitPage](https://silicator.github.io/SDRFunk/)
+[GitPage](https://wodowiesel.github.io/SDRFunk/)
 
 [Google Radio Receiver Forum Group](https://groups.google.com/forum/#!forum/radioreceiver)
 
