@@ -6,7 +6,11 @@ var url;
 var incognito;
 var activeTabId;
 
-chrome.tabs.onActivated.addListener(function(activeInfo){activeTabId = activeInfo.tabId;});
+var listentab = chrome.tabs.onActivated.addListener(
+function(activeInfo)
+{
+  activeTabId = activeInfo.tabId;
+});
 
 function settingChanged()
 {
@@ -15,7 +19,7 @@ function settingChanged()
   var pattern = /^file:/.test(url) ? url : url.replace(/\/[^\/]*?$/, '/*');
   console.log(type+' setting for '+pattern+': '+setting);
   // HACK: [type] is not recognised by the doc server's sample crawler,
-  // mention an explicit so type: 
+  // mention an explicit so type:
   // chrome.contentSettings.cookies.set - See http://crbug.com/299634
   chrome.contentSettings[type].set({
         'primaryPattern': pattern,
