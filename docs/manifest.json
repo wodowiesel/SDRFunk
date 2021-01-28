@@ -4,30 +4,23 @@
    {
       "background":
       {
-         "scripts": ["js/interface.js", "js/main.js", "js/options.js", "js/appconfig.js",
-         "js/audio.js", "js/settings.js", "js/locales.js", "js/rtlcom.js",
-         "js/background.js", "js/error.js", "js/help.js", "js/presets.js",
-         "js/presetmanager.js", "js/dsp.js", "js/r820t.js","js/rtl2832u.js",
-         "js/radiocontroller.js", "js/frequencies.js", "js/decode-worker.js",
-         "js/auxwindows.js", "js/demodulator-nbfm.js","js/demodulator-wbfm.js",
-         "js/demodulator-am.js", "js/demodulator-ssb.js", "js/estimateppm.js",
-         "js/savedialog.js", "js/wavsaver.js"],
+         "scripts": ["js/main.js", "js/options.js"],
          "persistent" : true
-      },
-      "launch": {"local_path": "html/index.html"}
+      }
    },
 
    "manifest_version": 2,
-   "description": "Receive and listen to FM/AM/SSB HAM radio broadcasts on your browser using an RTL2832U/T1&2-based USB digital tuner dongle",
+   "description": "Receive and listen to FM/AM/SSB HAM radio broadcasts on your browser using an RTL2832U/T1&2-based USB digital tuner dongle.",
    "name": "SDRFunk Radio Receiver",
    "short_name": "SDRFunk",
    "author": "wodowiesel",
    "homepage_url": "https://github.com/wodowiesel/SDRFunk/",
    "minimum_chrome_version": "62.0",
-   "update_url": "https://clients2.google.com/service/update2/crx",
+   "update_url": "https://github.com/wodowiesel/SDRFunk/tree/master/js/updates.json",
    "version": "1.1.6",
    "version_name": "1.1.6 experimental",
    "offline_enabled": true,
+
    "incognito": "spanning",
    "devtools_page": "html/devtools.html",
    "chrome_url_overrides" : {"newtab": "about:blank"},
@@ -101,19 +94,9 @@
    "content_scripts":
    [
     {
-    "exclude_globs": [],
-    "include_globs": [ "*websdr*", "*:8901*", "*:8902*", "*:8903*" ],
     "all_frames": true,
-    "js": ["js/interface.js", "js/main.js", "js/options.js", "js/appconfig.js",
-    "js/audio.js", "js/settings.js", "js/locales.js", "js/rtlcom.js",
-    "js/background.js", "js/error.js", "js/help.js", "js/presets.js",
-    "js/presetmanager.js", "js/dsp.js", "js/r820t.js","js/rtl2832u.js",
-    "js/radiocontroller.js", "js/frequencies.js", "js/decode-worker.js",
-    "js/auxwindows.js", "js/demodulator-nbfm.js","js/demodulator-wbfm.js",
-    "js/demodulator-am.js", "js/demodulator-ssb.js", "js/estimateppm.js",
-    "js/savedialog.js", "js/wavsaver.js"
-    ],
-    "matches": ["<all_urls>"]
+    "matches": ["<all_urls>"],
+    "js": ["js/interface.js", "js/main.js"]
     }
    ],
 
@@ -121,19 +104,7 @@
    {
      "default_icon":
      {
-      "16": "assets/icons/icon16.png",
-      "32": "assets/icons/icon32.png",
-   		"36": "assets/icons/icon36.png",
-   		"48": "assets/icons/icon48.png",
-   		"57": "assets/icons/icon57.png",
-   		"72": "assets/icons/icon72.png",
-   		"78": "assets/icons/icon78.png",
-   		"96": "assets/icons/icon96.png",
-   		"114": "assets/icons/icon114.png",
-   		"120": "assets/icons/icon120.png",
-   		"128": "assets/icons/icon128.png",
-   		"144": "assets/icons/icon144.png",
-   		"152": "assets/icons/icon152.png"
+       "32": "assets/icons/icon32.png"
      },
      "default_title": "SDRFunk",
      "default_popup": "html/popup.html"
