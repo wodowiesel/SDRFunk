@@ -20,7 +20,9 @@ Chrome Store [Radio-Receiver](https://chrome.google.com/webstore/detail/radio-re
 
 [Git-Link](https://github.com/google/radioreceiver) user: jtarrio under Apache License v2.0
 
-Tested with Chrome v73.0.3683.86 official x64-bit (Browserversion >= 71)
+Tested with Chrome v73.0.3683.86 official x64-bit (Browserversion 88 >= 71) with manifest v2
+
+(Browserversion 88+) with manifest v3 wip
 
 ___
 
