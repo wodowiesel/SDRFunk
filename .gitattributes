@@ -1,22 +1,21 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 
-# Custom for Visual Studio
-*.cs     diff=csharp
-
-# here c and py
-#*.c diff=astextplain
-#*.py diff=astextplain
-*.sh diff=astextplain
-
 # Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+*.csv diff=astextplain
+*.txt diff=astextplain
+*.md diff=astextplain
+*.pem diff=astextplain
+*.xml diff=astextplain
+*.html diff=astextplain
+*.json diff=astextplain
+*.js diff=astextplain
+*.css diff=astextplain
+*.yml diff=astextplain
+*.url diff=astextplain
+*.Ink diff=astextplain
+*.png -text
+*.jpg -text
+*.jpeg -text
+*.svg -text
+*.ico -text
